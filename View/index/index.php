@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/comment.min.css">
+    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.min.css">
     <!-- According to the screen automatically set the font size -->
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
 </head>
