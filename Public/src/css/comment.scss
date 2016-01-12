@@ -1,0 +1,503 @@
+/**
+ * reset
+ */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none;}
+li{list-style: none;}
+img{vertical-align: middle;border: 0;}
+html{font-size: 100px;}
+body{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+.clearfix:after{
+    display: block;
+    content: '';
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom:1;
+}
+input[type="text"], input[type="submit"], input[type="botton"] {
+    -webkit-appearance: none;
+    outline: none;
+}
+/*去除android a/button/input标签被点击时产生的边框 & 去除ios a标签被点击时产生的半透明灰色背景*/
+a,button,input,div{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+/**
+ * variable
+ */
+$uui-light-green: #8cc800;
+$uui-green: #36a664;
+$uui-brand-yellow: #ea5404;
+$uui-yellow: #ff8100;
+
+/**
+ * page index 
+ * author: hanjie;
+ */
+.uui-container{
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.uui-container-bg:before{
+    display: block;
+    content: '';
+    padding-bottom: 279%;
+    background: url(../../dist/images/comment-bg.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-wrapper{
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 76%;
+}
+
+/*uui-likebox*/
+.uui-likebox{
+    height: 1.5rem;
+    overflow: hidden;
+    margin-top: 1.02rem;
+    /*border: 1px solid #333;*/
+}
+.uui-likebox input{
+    border: none;
+    outline: none;
+}
+.uui-likebox-padding{
+    position: relative;
+    height: 1.28rem;
+    margin: .1rem;
+    /*border: 1px solid #333;*/
+}
+.uui-likebox .uui-pannel-bad,
+.uui-likebox .uui-pannel-good{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: .8rem;
+    height: .66rem;
+    text-align: center;
+    line-height: .66rem;
+    font-size: .16rem;
+    font-weight: bold;
+    font-family: monospace;
+    /* -webkit-body  fantasy inherit sans-serif monospace*/
+    /*border: 1px solid #333;*/
+    transition: font-size .5s ease;
+    -webkit-transform: translate3d(0, 0, 0); 
+    -moz-transform: translate3d(0, 0, 0); 
+    -ms-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0);
+}
+.uui-likebox .uui-pannel-bad{
+    left: 0;
+    background: url(../../dist/images/comment-pannel-bad.png)no-repeat center center;
+    background-size: 100% 100%;
+    color: #037ce4;
+}
+.uui-likebox .uui-pannel-good{
+    right: 0;
+    background: url(../../dist/images/comment-pannel-like.png)no-repeat center center;
+    background-size: 100% 100%;
+    color: #de3834;
+}
+.uui-likebox .uui-pannel-vs{
+    position: absolute;
+    top: .44rem;
+    left: .6rem;
+    z-index: 2;
+    width: .5rem;
+    height: .33rem;
+    background: url(../../dist/images/comment-vs.png)no-repeat center center;
+    background-size: 100% 100%;
+    /*border: 1px solid #333;*/
+}
+.uui-likebox .uui-btn-bad,
+.uui-likebox .uui-btn-good{
+    position: absolute;
+    /*bottom: 0rem;*/
+    bottom: -.06rem;
+    z-index: 1;
+    width: .8rem;
+    height: .5rem;
+    /*border: 1px solid #333;*/
+}
+.uui-likebox .uui-btn-bad{
+    left: 0;
+    background: url(../../dist/images/comment-btn-bad.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-likebox .uui-btn-bad:active{
+    background: url(../../dist/images/comment-btn-bading.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-likebox .badactive , .uui-likebox .badactive:active{
+    background: url(../../dist/images/comment-btn-baded.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-likebox .badbymeactive , .uui-likebox .badbymeactive:active{
+    background: url(../../dist/images/comment-btn-baded-byme.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.uui-likebox .uui-btn-good{
+    right: 0;
+    background: url(../../dist/images/comment-btn-like.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-likebox .uui-btn-good:active{
+    background: url(../../dist/images/comment-btn-liking.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-likebox .goodactive , .uui-likebox .goodactive:active{
+    background: url(../../dist/images/comment-btn-liked.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-likebox .goodbymeactive , .uui-likebox .goodbymeactive:active{
+    background: url(../../dist/images/comment-btn-liked-byme.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/*uui-message*/
+.uui-messagebox{
+    height: 3.4rem;
+    overflow: hidden;
+    margin-top: .4rem;
+    /*border: 1px solid #333;*/
+    text-align: center;
+}
+.uui-messagebox .uui-new-message{
+    height: .5rem;
+    /*border: 1px solid #333;*/
+}
+.uui-messagebox .uui-newmessage-btn{
+    display: inline-block;
+    height: .5rem;
+    width: 1.24rem;
+    background: url(../../dist/images/comment-btn-message.png)no-repeat center center;
+    background-size: 100% 100%;
+    /*border: 1px solid #333;*/
+}
+.uui-messagebox .uui-newmessage-btn:active{
+    background: url(../../dist/images/comment-btn-messaging.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-messagebox .uui-message-ranking{
+    width: 1.56rem;
+    height: 2.6rem;
+    display: inline-block;
+    margin-top: .4rem;
+    overflow-y: auto;
+}
+/*.uui-messagebox .uui-message-ranking ul{
+    width: 1.5rem;
+    height: 2.6rem;
+    display: inline-block;
+    overflow-y: auto;
+}*/
+
+.uui-messagebox .uui-message-ranking ul li {
+    width: 1.5rem;
+    height: .86rem;
+    /*border: 1px solid #333;*/
+}
+.uui-ranking-mark{
+    width: .2rem;
+    float: left;
+    position: relative;
+}
+.uui-ranking-mark:after{
+    display: block;
+    content: '';
+    padding-top: 268%;
+    background: url(../../dist/images/comment-star3.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-ranking-mark7{
+    width: .2rem;
+    float: left;
+    position: relative;
+}
+.uui-ranking-mark7:after{
+    display: block;
+    content: '';
+    padding-top: 268%;
+    background: url(../../dist/images/comment-star7.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-ranking-mark7 span{
+    position: absolute;
+    top: .03rem;
+    left: .072rem;
+    font-size: .1rem;
+    color: $uui-green!important;
+}
+.uui-ranking-mark span{
+    position: absolute;
+    top: .03rem;
+    left: .072rem;
+    font-size: .1rem;
+    color: #fff;
+}
+.uui-message-main{
+    float: right;
+    width: 1.24rem;
+    /*height: 100%;*/
+    height: .86rem;
+    /*border: 1px solid #333;*/
+}
+.uui-message-main .uui-message-header{
+    height: .2rem;
+    line-height: .2rem;
+    color: $uui-green;
+    font-size: .10rem;
+    font-weight: bold;
+}
+.uui-message-header .uui-message-title{
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    text-align: left;
+}
+.uui-message-like .numactive{
+    color: $uui-yellow;
+}
+.uui-message-header .uui-message-likebtn, .uui-message-header .btnactive{
+    display: inline-block;
+    width: .14rem;
+    position: relative;
+    top: .02rem;
+}
+.uui-message-header .uui-message-likebtn:after{
+    display: block;
+    content: '';
+    padding-top: 112%;
+    background: url(../../dist/images/comment-btn-good.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-message-header .btnactive:after{
+    display: block;
+    content: '';
+    padding-top: 112%;
+    background: url(../../dist/images/comment-btn-gooded.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-message-header .uui-message-like{
+    float: right;
+}
+.uui-message-main .uui-message-content{
+    width: 100%;
+    height: .66rem;
+    margin-top: .03rem;
+    color: $uui-green;
+    text-align: left;
+    overflow: hidden;
+}
+.uui-message-main .uui-message-content p{
+    width: 100%;
+    font-size: .09rem;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/**
+ * page list
+ * author: hanjie;
+ */
+.uui-list-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    background-color: #fff;
+    display: none;
+    margin: 0 auto;
+    padding: .1rem .1rem .36rem .1rem;
+}
+/*.uui-comment-list{
+    overflow: hidden;
+    height: 500px;
+}*/
+.uui-comment-list ul li{
+    /*height: 1rem;*/
+    width: 100%;
+    overflow: hidden;
+    padding: .07rem .14rem;
+    border: 2px solid $uui-light-green;
+    border-radius: .1rem;
+    margin-bottom: .1rem;
+}
+.uui-list-header{
+    height: .24rem;
+    line-height: .24rem;
+    font-weight: bold;
+    border-bottom: 2px solid $uui-green;
+}
+.uui-list-title{
+    float: left;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: $uui-green;
+    font-size: .12rem;
+}
+.uui-list-like{
+    float: right;
+    color: $uui-green;
+}
+.uui-list-like .numactive{
+    color: $uui-yellow;
+}
+.uui-list-like .uui-list-likebtn, .uui-list-like .btnactive{
+    display: inline-block;
+    width: .14rem;
+    position: relative;
+    top: .02rem;
+}
+.uui-list-like .uui-list-likebtn:after{
+    display: block;
+    content: '';
+    padding-top: 112%;
+    background: url(../../dist/images/comment-btn-good.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-list-like .btnactive:after{
+    display: block;
+    content: '';
+    padding-top: 112%;
+    background: url(../../dist/images/comment-btn-gooded.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-list-content{
+    margin-top: .01rem;
+    color: $uui-green;
+}
+
+.uui-comment-sendbox{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: .36rem;
+    padding: .05rem .1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+    /*border: 1px solid #333;*/
+}
+.uui-comment-sendbox .uui-comment-inputbox{
+    width: 80%;
+    float: left; 
+}
+.uui-comment-inputbox input{
+    height: .26rem;
+    line-height: 1.5;
+    width: 100%;
+    font-size: .085rem;
+    text-indent: .04rem;
+    border-radius: .04rem;
+    border: 2px solid #e5e5e5;
+    outline: none;
+}
+.uui-comment-sendbox .uui-comment-sendbtn{
+    width: 18%;
+    float: right;
+    margin-top: .03rem;
+}
+.uui-comment-sendbtn input{
+    display: inline-block;
+    height: .2rem;
+    width: 100%;
+    color: #fff;
+    line-height: .2rem;
+    text-align: center;
+    border-radius: .26rem;
+    background-color: $uui-brand-yellow;
+    border: 0;
+    outline: none;
+    -webkit-appearance: none;
+}
+.uui-comment-sendbtn input.disabled{
+    background: #999;
+}
+.uui-comment-successmodal{
+    display: none;
+    position: fixed;
+    left: 20%;
+    top:30%;
+    z-index: 102;
+    width: 60%;
+}
+.uui-comment-successmodal:after{
+    display: block;
+    content: '';
+    padding-top: 70%;
+    background: url(../../dist/images/comment-success-modal.png)no-repeat center center;
+    background-size: 100% 100%;
+}
+.uui-shade{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 101;
+}
+
+/**
+ * 三星 webview bug
+ */
+.uui-likebox-padding{
+    padding-top: 1.28rem;
+}
+.uui-messagebox .uui-newmessage-btn{
+    padding-top: .5rem;
+}
+.uui-messagebox .uui-message-ranking ul li:not(:first-child){
+    /*padding-top: .86rem;*/
+}
+
+
+/**
+ * 公用组件
+ */
+.uui-loading{
+    position: fixed;
+    margin:auto; 
+    left:0; 
+    right:0; 
+    top:0; 
+    bottom:0;
+
+    width: .6rem;
+    height: .3rem;
+    font-size: .09rem;
+    overflow: hidden;
+    padding: .1rem;
+    text-align: center;
+    border-radius: .04rem;
+    color: #fff;
+    background: rgba(0,0,0,.65);
+    
+    z-index: 1111;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+    opacity: 1;
+}

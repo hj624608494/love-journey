@@ -1,0 +1,1 @@
+var originalWidth=750,rootFontSize=getComputedStyle(document.documentElement,null).getPropertyValue("font-size").replace("px",""),recalc=function(){var e,t=3;e=document.documentElement.clientWidth>750?750:document.documentElement.clientWidth,document.documentElement.style.fontSize=e*t/originalWidth*rootFontSize+"px"};recalc(),window.onresize=recalc;
