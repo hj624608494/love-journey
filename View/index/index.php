@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>蘑菇街 - 我的买手街！</title>
-    <meta name="description" content="蘑菇街 - 我的买手街！">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>love-journey</title>
+    <meta name="description" content="love-journey">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
+    
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.min.css">
     <!-- According to the screen automatically set the font size -->
