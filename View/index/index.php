@@ -16,7 +16,7 @@
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
 </head>
 <body>
-    init
+    
 
     <!-- // <script src="http://172.17.11.61:8080/target/target-script-min.js#anonymous"></script> -->
 </body>
