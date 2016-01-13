@@ -28,8 +28,13 @@
         /* header */
         .love-header{
             position: fixed;
+            top: 0;
+            /*left: 0;*/
+            z-index: 1000;
             display: -webkit-flex;
             display: -webkit-box;
+            width: 100%;
+            max-width: 750px;
             line-height: 1.3;
             padding: .05rem .08rem;
             background: #fff;
@@ -91,6 +96,7 @@
             left: 0;
             right: 0;
             bottom: 0;
+            z-index: 1001;
             background: rgba(0,0,0,.6);
         }
         /*顶部登录*/
@@ -303,14 +309,221 @@
         </div>
 
         <!-- 限时抢购 -->
+        <div class="love-flash-sale">
+            <div class="love-flash-main">
+                <div class="love-flash-title">
+                    <span class="iconfont icon-shijian"></span>
+                    <span>限时快抢</span>
+                </div>
+                <div class="love-count-down">
+                    <span class="love-time">11</span>:
+                    <span class="love-time">11</span>:
+                    <span class="love-time">11</span>
+                </div>
+                <div class="love-flash-item">
+                    <a href="#"><img src="../../Public/dist/images/love-flash-main.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="love-flash-list">
+                <div class="love-list-top">
+                    <a href="#"><img src="../../Public/dist/images/love-flash-top.jpg" alt=""></a>
+                </div>
+                <div class="love-list-bottom">
+                    <div class="love-list-left">
+                        <a href="#"><img src="../../Public/dist/images/love-flash-left.jpg" alt=""></a>
+                    </div>
+                    <div class="love-list-right">
+                        <a href="#"><img src="../../Public/dist/images/love-flash-right.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- 图片分类 -->
+        <div class="love-img-category">
+            <div class="love-module-title">全部商品</div>
+
+            <ul class="love-category-list clearfix">
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category1.jpg" alt=""></a>
+                    <p class="love-category-name">上衣</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category2.jpg" alt=""></a>
+                    <p class="love-category-name">裤子</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category3.jpg" alt=""></a>
+                    <p class="love-category-name">裙子</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category4.jpg" alt=""></a>
+                    <p class="love-category-name">内衣</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category5.jpg" alt=""></a>
+                    <p class="love-category-name">鞋子</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category6.jpg" alt=""></a>
+                    <p class="love-category-name">包包</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category7.jpg" alt=""></a>
+                    <p class="love-category-name">男友</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
+                    <p class="love-category-name">美妆</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category9.jpg" alt=""></a>
+                    <p class="love-category-name">配饰</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category10.png" alt=""></a>
+                    <p class="love-category-name">母婴</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category11.png" alt=""></a>
+                    <p class="love-category-name">家居</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
+                    <p class="love-category-name">个护</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category13.png" alt=""></a>
+                    <p class="love-category-name">百货</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+                <li class="love-category-item">
+                    <a href="#"><img src="../../Public/dist/images/love-category14.jpg" alt=""></a>
+                    <p class="love-category-name">零食</p>
+                    <p class="love-category-description">新年换新衣</p>
+                </li>
+            </ul>
+        </div>
 
         <!-- 商品列表 -->
+        <div class="love-item-list clearfix">
+            <div class="love-item-main" style="margin-right: 2%;">
+                <span class="love-item-label">母婴</span>
+
+                <a class="love-item-img" href="#">
+                    <div class="love-img-detail">
+                        <img src="../../Public/dist/images/love-item1.png" width="100%" alt="">
+                    </div>
+                </a>
+
+                <div class="love-item-content">
+                    <a href="#">十元封顶vol.29</a>
+                    <p>生活需要美好小物来搭配~</p>
+                </div>
+            </div>
+
+            <div class="love-item-main">
+                <span class="love-item-label">家居</span>
+
+                <a class="love-item-img" href="#">
+                    <div class="love-img-detail">
+                        <img src="../../Public/dist/images/love-item1.jpg" width="100%" alt="">
+                    </div>
+                </a>
+
+                <div class="love-item-content">
+                    <a href="#">小小型男</a>
+                    <p>小型男品味从小培养，绝对百搭必备款！</p>
+                </div>
+            </div>
+            
+            <div class="love-item-main" style="margin-right: 2%;">
+                <span class="love-item-label">母婴</span>
+
+                <a class="love-item-img" href="#">
+                    <div class="love-img-detail">
+                        <img src="../../Public/dist/images/love-item1.png" width="100%" alt="">
+                    </div>
+                </a>
+
+                <div class="love-item-content">
+                    <a href="#">十元封顶vol.29</a>
+                    <p>生活需要美好小物来搭配~</p>
+                </div>
+            </div>
+
+            <div class="love-item-main">
+                <span class="love-item-label">家居</span>
+
+                <a class="love-item-img" href="#">
+                    <div class="love-img-detail">
+                        <img src="../../Public/dist/images/love-item1.jpg" width="100%" alt="">
+                    </div>
+                </a>
+
+                <div class="love-item-content">
+                    <a href="#">小小型男</a>
+                    <p>小型男品味从小培养，绝对百搭必备款！</p>
+                </div>
+            </div>
+
+            <div class="love-item-main" style="margin-right: 2%;">
+                <span class="love-item-label">母婴</span>
+
+                <a class="love-item-img" href="#">
+                    <div class="love-img-detail">
+                        <img src="../../Public/dist/images/love-item1.png" width="100%" alt="">
+                    </div>
+                </a>
+
+                <div class="love-item-content">
+                    <a href="#">十元封顶vol.29</a>
+                    <p>生活需要美好小物来搭配~</p>
+                </div>
+            </div>
+
+            <div class="love-item-main">
+                <span class="love-item-label">家居</span>
+
+                <a class="love-item-img" href="#">
+                    <div class="love-img-detail">
+                        <img src="../../Public/dist/images/love-item1.jpg" width="100%" alt="">
+                    </div>
+                </a>
+
+                <div class="love-item-content">
+                    <a href="#">小小型男</a>
+                    <p>小型男品味从小培养，绝对百搭必备款！</p>
+                </div>
+            </div>
+        </div>
 
         <!-- 底部下载 -->
+        <div class="love-footer-download">
+            <!-- <span class="love-download-close iconfont icon-guanbi"></span> -->
+            <img src="../../Public/dist/images/logo.png" alt="">
+            <span class="love-site-slogan">更多变美妙招一学就会</span>
+            <a class="love-download-btn">立即下载</a>
+        </div>
     </div>
+    
+    <!-- zepto -->
+    <script src="../../Public/zepto/zepto.min.js"></script>
 
+    
     <script>
         window.onload = function(){
             function leftMenun(){
@@ -326,6 +539,5 @@
             leftMenun();
         }
     </script>
-    <!-- // <script src="http://172.17.11.61:8080/target/target-script-min.js#anonymous"></script> -->
 </body>
 </html>
