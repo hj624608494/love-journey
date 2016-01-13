@@ -34,6 +34,7 @@
             padding: .05rem .08rem;
             background: #fff;
             border-bottom: 1px solid #e8e8e8;
+            z-index: 200;
         }
         .love-menu-icon{
             display: inline-block;
@@ -68,7 +69,20 @@
             color: #ccc;
         }
 
-
+        .love-left-menu{
+           display: none;
+           position: absolute;
+           top: 0;
+           left: -2rem;
+           height: 100%;
+            width: 2rem;
+            background-color: #fff;
+            z-index: 2000;
+            -webkit-transform: translate3d(-4em,0,0);
+             transform: translate3d(-4em,0,0);
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            overflow: hidden;}
         /* PUBLIC mask */
         .love-mask{
             display: none;
@@ -79,9 +93,106 @@
             bottom: 0;
             background: rgba(0,0,0,.6);
         }
-        
+        /*顶部登录*/
+        .love-top-login {
+            padding-top: .3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .love-top-login .form-shunt{
+            display: block;
+            /*height: 6rem;*/
+            background: #c9bafb;
+        }
+        .love-top-login-controller{
+            position: absolute;
+            top:1.3rem;
+            width: 100%;
+            height: 100%;
+        }
+        .love-top-login-controller .btn-login{
+            background: #ff5777;
+        }
+        .love-top-login-controller .btn-download{
+            color: #333;
+            background: #fff;
+
+        }
+         .love-top-login-controller .btn-login,.btn-download{
+            display: block;
+            height: .25rem;
+            line-height: .25rem;
+            margin: 0 auto .08rem auto;
+            color: #fff;
+            -webkit-border-radius: .04rem;
+            border-radius: .03rem;
+            border: none;
+            font-size: .1rem;
+            outline: 0;
+            text-align: center;
+            width: 1.7rem;
+         }
+          .love-top-login-controller .other-login{
+            text-align: center;
+            padding-top: .05rem;
+          }
+          .other-login .iconqq{
+            margin-right: .1rem;
+            width: 1.42rem;
+            height: .35rem;
+            /*background:url('./mgj/蘑菇街 - 我的买手街！_files/qq.png') 0 0 no-repeat;*/
+            background-size: 100%;
+          }
+           .other-login .iconweibo{
+            margin-right: .1rem;
+            width: 1.5rem;
+            height: .35rem;
+            /*background:url('./mgj/蘑菇街 - 我的买手街！_files/weibo.png') 0 0 no-repeat;*/
+            background-size: 100%;
+           }
+           .other-login a img{
+            width: .5rem;
+           }
+
+           /*特色市场*/
+
+           .love-feature-market .buy-markets{
+            background: #fff;
+            /*padding: .1rem;*/
+           }
+          .buy-markets .makets-title{
+            font-size: .12rem;
+            color: #333;
+            padding:.1rem 0  0 .1rem;
+          }
+          .makets-content .module-item{
+            width: 25%;
+            text-align: center;
+            float: left;
+          }
+          .module-item .item-logo {
+            margin: .1rem;
+          }
+          .module-item .item-logo img{
+            margin: 0 auto;
+            display: block;
+            width: .37rem;
+            height: .37rem;
+          }
+          .module-item .item-title{
+            font-size: .1rem;
+            line-height: 1;
+            margin-bottom: .05rem;
+            color: #424242;
+          }
+          .module-item .item-desc{
+            font-size: .08rem;
+            color: #999;
+            line-height: 1;
+         }
     </style>
 </head>
+
 <body>
     <div class="love-container">
         
@@ -98,23 +209,6 @@
             <span class="love-shopcar iconfont icon-gouwuche"></span>
         </div>
 
-        <style type="text/css">
-            .love-left-menu{
-                display: none;
-                position: absolute;
-                top: 0;
-                left: -2rem;
-                height: 100%;
-                width: 2rem;
-                background-color: #fff;
-                z-index: 2000;
-                -webkit-transform: translate3d(-4em,0,0);
-                transform: translate3d(-4em,0,0);
-                -webkit-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
-                overflow: hidden;
-            }
-        </style>
         <!-- 左侧菜单 -->
         <div class="love-left-menu" id="J_leftMenuBox">
             <ul>
@@ -129,13 +223,84 @@
         </div>
 
         <!-- mask -->
-        <div class="love-mask" id="J_mask"></div>
+        <div class="love-mask" id="J_mask">  </div>
 
         <!-- 顶部登录 -->
-        <div class="love-top-login"></div>
+        <div class="love-top-login  clearfix">
+            <div class="form-shunt">
+               <img src="../../Public/dist/images/love-login-bg.jpg" width="100%">
+               <div class="love-top-login-controller">
+                    <a href="javascript:;" class="btn-login">登录</a>
+                    <a href="javascript:;" class="btn-download">下载</a>
+                    <div class="other-login">
+                        <a href="" class="iconqq"><img src="../../Public/dist/images/love-qq.png"></a>
+                        <a href="" class="iconweibo"><img src="../../Public/dist/images/love-weibo.png"></a>
+                    </div>
+               </div>
+            </div>
+        </div>
 
         <!-- 特色市场 -->
-        <div class="love-feature-market"></div>
+        <div class="love-feature-market">
+            <div class="buy-markets ">
+                <div class="makets-title">特色市场</div>
+                <div class="makets-content">
+                    <ul>
+                        <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature1.jpg"></div>
+                                <div class="item-title">品牌</div>
+                                <div class="item-desc">冬季大牌攻略</div>
+                            </a>
+                        </li>
+                         <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature2.jpg"></div>
+                                <div class="item-title">红人Bazaar</div>
+                                <div class="item-desc">冬日红人热款</div>
+                            </a>
+                        </li>
+
+                         <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature3.jpg"></div>
+                                <div class="item-title">心水好货</div>
+                                <div class="item-desc">2016开运好物</div>
+                            </a>
+                        </li>
+
+                         <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature4.jpg"></div>
+                                <div class="item-title">设计师</div>
+                                <div class="item-desc">设计师新款来袭</div>
+                            </a>
+                        </li>
+                         <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature5.jpg"></div>
+                                <div class="item-title">轻时髦</div>
+                                <div class="item-desc">时髦轻生活</div>
+                            </a>
+                        </li>
+                         <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature6.jpg"></div>
+                                <div class="item-title">享瘦</div>
+                                <div class="item-desc">能让你变瘦</div>
+                            </a>
+                        </li>
+                         <li class="module-item">
+                            <a href="javascript:;">
+                                <div class="item-logo"><img src="../../Public/dist/images/love-feature7.jpg"></div>
+                                <div class="item-title">淘淘馆</div>
+                                <div class="item-desc">全球超值好货</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- 限时抢购 -->
 
