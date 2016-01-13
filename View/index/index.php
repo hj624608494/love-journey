@@ -250,7 +250,7 @@
         <div class="love-feature-market">
             <div class="buy-markets ">
                 <div class="makets-title">特色市场</div>
-                <div class="makets-content">
+                <div class="makets-content clearfix">
                     <ul>
                         <li class="module-item">
                             <a href="javascript:;">
