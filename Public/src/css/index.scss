@@ -21,7 +21,8 @@ html{
 }
 body{
     font-size: 16px;
-    font-family: "Microsoft YaHei";
+    font-family: "Helvetica Microsoft YaHei";
+    background: #F6F6F6;
 }
 /*Remove the ios bring their own style*/
 input[type="text"], 
@@ -52,12 +53,278 @@ div{
 /**
  * variable
  */
-$uui-light-green: #8cc800;
-$uui-green: #36a664;
-$uui-brand-yellow: #ea5404;
-$uui-yellow: #ff8100;
+$love-brand-color: #FF5777;
+
+$love-module-bgcolor: #fff;
+$love-module-padding: .08rem;
+$love-module-margin: .1rem;
+
+/*font color*/
+$love-fc-light-gray: #999;
+$love-fc-gray: #666;
+$love-fc-dull-gray: #333;
 
 /**
  * page index 
  * author: hanjie;
  */
+
+
+/**
+ * module 限时抢购
+ * author: hanjie;
+ */
+.love-flash-sale{
+    margin-top: .5rem;
+    
+    width: 100%;
+    height: 1.24rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    background-color: $love-module-bgcolor;
+    margin-bottom: $love-module-margin;
+
+    .love-flash-main{
+        -webkit-box-flex: 160;
+        flex: 160 1 0% !important;
+        width: 0px;
+        max-width: 100%;
+        display: block;
+        position: relative;
+        padding: 0px !important;
+        text-align: center;
+
+        .love-flash-title{
+            line-height: 1.5;
+            color: rgb(235, 47, 44);
+            font-size: .1rem;
+            .iconfont{
+                font-size: .16rem;
+            }
+        }
+
+        .love-count-down{
+            font-size: .1rem;
+        }
+
+        .love-flash-item img{
+            max-width: .85rem;
+        }
+    }
+
+    .love-flash-list{
+        -webkit-box-flex: 215;
+        flex: 215 1 0% !important;
+        width: 0px;
+        max-width: 100%;
+        display: block;
+        position: relative;
+        padding: 0px !important;
+
+        .love-list-top{
+            margin-bottom: .04rem;
+
+            img{
+                width: 100%;
+            }
+        }
+        .love-list-bottom {
+            .love-list-left{
+                float: left;
+                width: 48.5%;
+
+                img{
+                    width: 100%;
+                }
+            }
+            .love-list-right{
+                float: right;
+                width: 48.5%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * module 图片分类
+ * author: hanjie;
+ */
+.love-img-category{
+    width: 100%;
+    height: auto;
+    padding: $love-module-padding;
+    background: $love-module-bgcolor;
+
+    .love-module-title{
+        font-size: .11rem;
+        color: $love-fc-dull-gray;
+    }
+
+    .love-category-list{
+        width: 100%;
+
+        .love-category-item{
+            float: left;
+            width: 25%;
+            text-align: center;
+            margin-top: .1rem;
+
+            img{
+                max-width: 66%;
+                margin-bottom: .05rem;
+            }
+
+            .love-category-name{
+                color: $love-fc-dull-gray;
+                font-size: .1rem;
+                line-height: 1.5;
+            }
+
+            .love-category-description{
+                color: $love-fc-gray;
+                font-size: .07rem;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+
+/**
+ * module 商品列表
+ * author: hanjie;
+ */
+.love-item-list{
+    width: 100%;
+    padding: $love-module-padding;
+    margin-top: -.06rem;
+    margin-bottom: .4rem;
+    height: auto;
+
+    .love-item-main{
+        position: relative;
+        width: 49%;
+        height: auto;
+        float: left;
+        padding: .04rem;
+        margin-top: .18rem;
+        background-color: #fff;
+        border-bottom: 2px solid $love-brand-color; 
+
+        .love-item-label{
+            position: absolute;
+            top: -.09rem;
+            left: 50%;
+            margin-left: -.16rem;
+            z-index: 100;
+
+            display: inline-block;
+            height: .18rem;
+            width: .32rem;
+            overflow: hidden;
+            font-size: .08rem;
+            text-align: center;
+            line-height: .18rem;
+            background-color: #fff;
+            border-radius: .09rem;
+        }
+
+        .love-item-img{
+            width: 100%;
+            display: inline-block;
+            overflow: hidden;
+
+            .love-img-detail{
+                position: relative;
+                padding-top: 100%;
+                
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        .love-item-content{
+            width: 100%;
+            height: .46rem;
+
+            a{
+                color: $love-fc-dull-gray;
+                font-size: .104rem;
+                line-height: 2;
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+
+            }
+            p{
+                color: $love-fc-gray;
+                font-size: .07rem;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+
+/**
+ * module 底部下载
+ * author: hanjie;
+ */
+.love-footer-download{
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+    max-width: 750px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255,255,255, .8);
+    
+    /*.love-download-close{
+        position: absolute;
+        top: -.1rem;
+        left: 4px;
+        color: $love-fc-gray;
+        font-size: .14rem;
+    }*/
+
+    img{
+        position: absolute;
+        top: -10px;
+        left: 12px;
+        width: 50px;
+    }
+
+    .love-download-btn{
+        position: absolute;
+        top: 10px;
+        right: .08rem;
+        display: inline-block;
+        height: 30px;
+        width: 90px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 4px;
+        background: $love-brand-color;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .love-site-slogan{
+        position: absolute;
+        left: 76px;
+        font-size: 14px;
+        color: $love-brand-color;
+    }
+}
