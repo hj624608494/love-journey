@@ -41,7 +41,7 @@
       .love-enter .love-enter-controller{
         margin-top: .2rem;
       }
-      .love-enter-controller .love-enter-account,.love-enter-controller .love-enter-download{
+      .love-enter-controller .love-enter-account,.love-enter-controller .love-enter-download,.love-enter-controller .love-enter-login{
         display: block;
         height: .25rem;
         line-height: .25rem;
@@ -53,6 +53,10 @@
         outline: 0;
         width: 1.7rem; 
         text-indent: 0.1rem;
+      }
+      .love-enter-controller .love-enter-login{
+        text-align: center;
+        margin-top: .17rem;
       }
       .love-enter-controller .love-enter-account{
         background: #fff;
@@ -306,9 +310,9 @@
                     <span>限时快抢</span>
                 </div>
                 <div class="love-count-down">
-                    <span class="love-time">11</span>:
-                    <span class="love-time">11</span>:
-                    <span class="love-time">11</span>
+                    <span class="love-time J_timeHours">00</span>:
+                    <span class="love-time J_timeMinutes">00</span>:
+                    <span class="love-time J_timeSeconds">00</span>
                 </div>
                 <div class="love-flash-item">
                     <a href="#"><img src="../../Public/dist/images/love-flash-main.jpg" alt=""></a>
@@ -511,73 +515,92 @@
     </div>
     
     <!-- zepto -->
-    <script src="../../Public/zepto/zepto.min.js"></script>
+    <script src="../../Public/dist/plugins/zepto/zepto.min.js"></script>
+    <!-- util -->
+    <script src="../../Public/dist/js/factory/util.js"></script>
 
     
     <script>
-        window.onload = function(){
+        $(function(){
+            /**
+             * [leftMenun 左侧菜单显示/隐藏]
+             * @return {[type]} [description]
+             */
             function leftMenun(){
-                var oLeftMenu = document.getElementById('J_leftMenu');
-                var oLeftMenuBox = document.getElementById('J_leftMenuBox');
-                var oMask = document.getElementById('J_mask');
-                oLeftMenu.onclick = function(){
-                    oMask.style.display = 'block';
-                    oLeftMenuBox.style.display = 'block';
-                    oLeftMenuBox.style.left = 0;
-                }
+                //显示
+                $('#J_leftMenu').click(function(){
+                    $('#J_mask').css('display', 'block');
+                    $('#J_leftMenuBox').css({'visibility': 'visible', 'left': 0});
+                    //阻止页面滚动
+                    util.switchPageScroll(true);
+                })
+                //隐藏
+                $('#J_mask, #J_leftMenuBox').click(function(){
+                    $('#J_mask').css('display', 'none');
+                    $('#J_leftMenuBox').css({'visibility': 'hidden', 'left': -2+'rem'});
+                    //开启页面滚动
+                    util.switchPageScroll(false);
+                })
             }
             leftMenun();
-            // 登录
-            var oBtnlogin = document.getElementById('J-btn-login');
-            var oLoveenter = document.getElementById('J-love-enter');
-                oBtnlogin.onclick = function() {
-                   oLoveenter.style.display="block";
+
+            /**
+             * [countDown 倒计时]
+             * @return {[type]} [description]
+             */
+            function countDown(){
+                // var a = +new Date('2016-01-16 16:59:11');
+                var a = '1453109551000';
+
+                setInterval(function(){
+                    var o = {};
+                    o = util.countDown(a);
+                    
+                    $('.J_timeHours').html(util.fillZero(o.hour));
+                    $('.J_timeMinutes').html(util.fillZero(o.minute));
+                    $('.J_timeSeconds').html(util.fillZero(o.second));
+                },1000)
             }
-           //返回
-            var oEnterback = document.getElementById('J-enter-back');
-                oEnterback.onclick=function(){
-                    oLoveenter.style.display="none";
-                }
-            //注册
-            var oLovelogon =document.getElementById('J-love-logon');
-            var oLogonlogin =document.getElementById('J-logon-login');
-            var oEnterlogon = document.getElementById('J-enter-logon');
+            countDown();
 
-               oEnterlogon.onclick = function(){
-                   oLovelogon.style.display="block";
-               }
-              oLogonlogin.onclick = function(){
-                    oLovelogon.style.display="none";
-              }
-            //返回
-            var oLogonback = document.getElementById('J-logon-back');
+            /**
+             * [login login]
+             * @return {[type]} [description]
+             */
+            function login(){
+                //登录
+                $('#J-btn-login').click(function(){
+                    $('#J-love-enter').css('display', 'block');
+                })
+                //返回
+                $('#J-enter-back').click(function(){
+                    $('#J-love-enter').css('display', 'none');
+                })
+            }
+            login();
 
-                oLogonback.onclick = function(){
-                    oLovelogon.style.display="none";
-                    oLoveenter.style.display="none";
+            /**
+             * [register register]
+             * @return {[type]} [description]
+             */
+            function register(){
+                //注册
+                $('#J-enter-logon').click(function(){
+                    $('#J-love-logon').css('display', 'block');
+                })
+                //登录
+                $('#J-logon-login').click(function(){
+                    $('#J-love-enter').css('display', 'block');
+                    $('#J-love-logon').css('display', 'none');
+                })
+                //返回
+                $('#J-logon-back').click(function(){
+                    $('#J-love-logon, #J-love-enter').css('display', 'none');
+                })
+            }
+            register();
 
-                }
-
-              // function Loginonclik(overEle, pannerEle){
-              //   var oOverEle = document.getElementById('overEle');
-              //   var oPannerEle = document.getElementById('pannerEle');
-
-              //    oOverEle.onclick = function(){
-              //       oPannerEle.style ="block";
-              //    }
-
-              //     oOverEle.onclick = function(){
-              //       oPannerEle.style ="none";
-              //    }
-              // }
-              // Loginonclik('J-btn-login','J-love-enter');
-              // Loginonclik('J-enter-back','J-love-enter');
-              // Loginonclik('J-enter-logon','J-love-logon');
-              // Loginonclik('J-logon-login','J-love-logon')
-
-        }
-
-
+        })
     </script>
 </body>
 </html>

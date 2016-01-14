@@ -29,7 +29,7 @@ body {
 input[type="text"],
 input[type="submit"],
 input[type="botton"] {
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
   outline: none; }
 
 /*Remove android&ios a/button/input the border&background around the label is clicked to produce*/
@@ -67,7 +67,7 @@ div {
 /* PUBLIC mask */
 .love-mask {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -126,7 +126,7 @@ div {
  * author: sj;
  */
 .love-left-menu {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: -2rem;
@@ -137,6 +137,12 @@ div {
   -webkit-transform: translate3d(-4em, 0, 0);
   transform: translate3d(-4em, 0, 0);
   transition: all .3s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
   overflow: hidden; }
 
 /**
