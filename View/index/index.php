@@ -23,7 +23,7 @@
       .love-top-login .form-shunt .love-enter{
        position: absolute;
        top:.3rem;
-       background:#ECEDEF ;
+       background:#ECEDEF;
        height: 2rem;
        width: 100%;
        background: rgb(236, 237, 239);
@@ -46,7 +46,6 @@
         height: .25rem;
         line-height: .25rem;
         margin: 0 auto .08rem auto;
-        color: #fff;
         border-radius: .03rem;
         border: none;
         font-size: .1rem;
@@ -115,7 +114,6 @@
          height: .25rem;
          line-height: .25rem;
          margin: 0 auto .08rem auto;
-         color: #fff;
          border-radius: .03rem;
          border: none;
          font-size: .1rem;
@@ -133,7 +131,6 @@
          .love-logon .love-logon-controller .love-logon-box .love-logon-authcode{
           height: .25rem;
           line-height: .25rem;
-          color: #fff;
           border-radius: .03rem;
           border: none;
           font-size: .1rem;

@@ -29,7 +29,7 @@ body {
 input[type="text"],
 input[type="submit"],
 input[type="botton"] {
-  /*-webkit-appearance: none;*/
+  -webkit-appearance: none;
   outline: none; }
 
 /*Remove android&ios a/button/input the border&background around the label is clicked to produce*/
