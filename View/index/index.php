@@ -134,9 +134,9 @@
                     <span>限时快抢</span>
                 </div>
                 <div class="love-count-down">
-                    <span class="love-time">11</span>:
-                    <span class="love-time">11</span>:
-                    <span class="love-time">11</span>
+                    <span class="love-time J_timeHours">00</span>:
+                    <span class="love-time J_timeMinutes">00</span>:
+                    <span class="love-time J_timeSeconds">00</span>
                 </div>
                 <div class="love-flash-item">
                     <a href="#"><img src="../../Public/dist/images/love-flash-main.jpg" alt=""></a>
@@ -339,23 +339,54 @@
     </div>
     
     <!-- zepto -->
-    <script src="../../Public/zepto/zepto.min.js"></script>
+    <script src="../../Public/dist/plugins/zepto/zepto.min.js"></script>
+    <!-- util -->
+    <script src="../../Public/dist/js/factory/util.js"></script>
 
     
     <script>
-        window.onload = function(){
+        $(function(){
+            /**
+             * [leftMenun 左侧菜单显示/隐藏]
+             * @return {[type]} [description]
+             */
             function leftMenun(){
-                var oLeftMenu = document.getElementById('J_leftMenu');
-                var oLeftMenuBox = document.getElementById('J_leftMenuBox');
-                var oMask = document.getElementById('J_mask');
-                oLeftMenu.onclick = function(){
-                    oMask.style.display = 'block';
-                    oLeftMenuBox.style.display = 'block';
-                    oLeftMenuBox.style.left = 0;
-                }
+                //显示
+                $('#J_leftMenu').click(function(){
+                    $('#J_mask').css('display', 'block');
+                    $('#J_leftMenuBox').css({'visibility': 'visible', 'left': 0});
+                    //阻止页面滚动
+                    util.switchPageScroll(true);
+                })
+                //隐藏
+                $('#J_mask, #J_leftMenuBox').click(function(){
+                    $('#J_mask').css('display', 'none');
+                    $('#J_leftMenuBox').css({'visibility': 'hidden', 'left': -2+'rem'});
+                    //开启页面滚动
+                    util.switchPageScroll(false);
+                })
             }
             leftMenun();
-        }
+
+            /**
+             * [countDown 倒计时]
+             * @return {[type]} [description]
+             */
+            function countDown(){
+                // var a = +new Date('2016-01-16 16:59:11');
+                var a = '1453109551000';
+
+                setInterval(function(){
+                    var o = {};
+                    o = util.countDown(a);
+                    
+                    $('.J_timeHours').html(util.fillZero(o.hour));
+                    $('.J_timeMinutes').html(util.fillZero(o.minute));
+                    $('.J_timeSeconds').html(util.fillZero(o.second));
+                },1000)
+            }
+            countDown();
+        })
     </script>
 </body>
 </html>
