@@ -13,9 +13,152 @@
     <!-- iconfont -->
     <link rel="stylesheet" type="text/css" href="../../Public/dist/plugins/iconfont/iconfont.css">
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.css">
+
     <!-- According to the screen automatically set the font size -->
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
+    <style type="text/css">
+        /*登录界面*/
+      .love-top-login .form-shunt .love-enter{
+       position: absolute;
+       top:.3rem;
+       background:#ECEDEF ;
+       height: 2rem;
+       width: 100%;
+       background: rgb(236, 237, 239);
+       padding: .1rem;
+       display:none;
+      }
+      .love-enter a{
+       color: rgb(51, 51, 51);
+       font-size: 0.12rem;
+
+      }
+      .love-enter .enter-back{
+        padding-right: 1.6rem;
+      } 
+      .love-enter .love-enter-controller{
+        margin-top: .2rem;
+      }
+      .love-enter-controller .love-enter-account,.love-enter-controller .love-enter-download{
+        display: block;
+        height: .25rem;
+        line-height: .25rem;
+        margin: 0 auto .08rem auto;
+        color: #fff;
+        border-radius: .03rem;
+        border: none;
+        font-size: .1rem;
+        outline: 0;
+        width: 1.7rem; 
+        text-indent: 0.1rem;
+      }
+      .love-enter-controller .love-enter-account{
+        background: #fff;
+      }
+      .love-enter-controller .love-enter-download{
+       color: #333;
+       background: #fff;
+      }
+      .love-enter-controller .love-enter-login{
+        background: #ff5777;
+        color: #fff; 
+      }
+      .love-enter-controller .enter-other-login{
+        text-align: center;
+         padding-top: .05rem; }
+      .love-enter-controller .enter-other-login .love-enter-iconqq{
+        margin-right: .1rem;
+        width: 1.42rem;
+        height: .35rem;
+        background-size: 100%; }
+      .love-enter-controller .enter-other-login .love-enter-iconweibo {
+        margin-right: .1rem;
+        width: 1.5rem;
+        height: .35rem;
+        background-size: 100%; }
+        .love-enter-controller .enter-other-login a img{
+         width: .5rem;
+        }
+
+
+        /*注册*/
+        .love-top-login .form-shunt .love-logon{
+          position: absolute;
+          top:.3rem;
+          background:#ECEDEF ;
+          height: 2rem;
+          width: 100%;
+          margin-top: .02rem;
+          background: rgb(236, 237, 239);
+          padding: .1rem;
+          display: none;
+        }
+        .love-logon a{
+          color: rgb(51, 51, 51);
+          font-size: 0.12rem;
+        }
+        .love-logon .logon-back{
+          padding-right: 1.6rem;
+        }
+        .love-logon .love-logon-controller{
+          margin-top: .2rem;
+        }
+        .love-logon .love-logon-controller .love-logon-num
+        ,.love-logon-enroll, .love-logon-download{
+         display: block;
+         height: .25rem;
+         line-height: .25rem;
+         margin: 0 auto .08rem auto;
+         color: #fff;
+         border-radius: .03rem;
+         border: none;
+         font-size: .1rem;
+         outline: 0;
+         width: 1.7rem; 
+         text-indent: 0.1rem;
+        }
+         .love-logon .love-logon-controller .love-logon-box{
+          margin: 0 .1rem.08rem .3rem;
+          height: .25rem;
+          width: 1.7rem; 
+          background: #fff;
+          border-radius: .03rem;
+         }
+         .love-logon .love-logon-controller .love-logon-box .love-logon-authcode{
+          height: .25rem;
+          line-height: .25rem;
+          color: #fff;
+          border-radius: .03rem;
+          border: none;
+          font-size: .1rem;
+          outline: 0;
+          text-indent: .1rem;
+          width: 1.1rem;
+
+         }
+         .love-logon .love-logon-controller .love-logon-box .love-logon-click{
+          font-size: .1rem;
+          border-left: 1px solid rgb(209, 209, 209);
+          background: #fff;
+          text-indent: .1rem;
+          padding: .03rem .08rem;
+          padding-right: 0;
+          color: #a9a9a9;
+         }
+          .love-logon .love-logon-controller .love-logon-download{
+            margin-bottom: .15rem;
+          }
+        
+         .love-logon .love-logon-controller .love-logon-enroll{
+         background: #ff5777;
+         color:#fff;
+         text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
     <div class="love-container">
@@ -54,12 +197,41 @@
             <div class="form-shunt">
                <img src="../../Public/dist/images/love-login-bg.jpg" width="100%">
                <div class="love-top-login-controller">
-                    <a href="javascript:;" class="btn-login">登录</a>
-                    <a href="javascript:;" class="btn-download">下载</a>
+                    <a href="javascript:;" class="btn-login" id="J-btn-login">登录</a>
+                    <a href="javascript:;" class="btn-download" id="J-btn-download">下载</a>
                     <div class="other-login">
                         <a href="" class="iconqq"><img src="../../Public/dist/images/love-qq.png"></a>
                         <a href="" class="iconweibo"><img src="../../Public/dist/images/love-weibo.png"></a>
                     </div>
+               </div>
+               <!-- 登录界面 -->
+               <div class="love-enter clearfix" id="J-love-enter" > 
+                     <a href="javascript:;"class="enter-back iconfont icon-fanhui" id="J-enter-back">返回</a>
+                     <a href="javascript:;"class="enter-logon" id="J-enter-logon">注册</a>     
+                 <div class="love-enter-controller">
+                     <input type="text" class="love-enter-account" id="J-btn-account" placeholder="昵称/邮箱/手机号"/>
+                     <input type="password" class="love-enter-download" id="J-enter-download" placeholder="密码"/>
+                     <a href="javascript:;" class="love-enter-login" id="J-enter-login">登录</a>
+                    <div class="enter-other-login">
+                        <a href="" class="love-enter-iconqq"><img src="../../Public/dist/images/love-qq.png"></a>
+                        <a href="" class="love-enter-iconweibo"><img src="../../Public/dist/images/love-weibo.png"></a>
+                    </div>
+                 </div>
+               </div>
+               <!--注册-->
+               <div class="love-logon" id="J-love-logon">
+                   <a href="javascript:;"class="logon-back iconfont icon-fanhui" id="J-logon-back">返回</a>
+                   <a href="javascript:;" class="logon-login" id="J-logon-login">登录</a>
+
+                   <div class="love-logon-controller clearfix">
+                       <input type="text" class="love-logon-num" placeholder="请输入手机号">
+                       <div class="love-logon-box">
+                           <input type="text" class="love-logon-authcode" placeholder="验证码">
+                           <a href="javascript:;" class="love-logon-click">点击获取</a>
+                       </div>
+                       <input type="password" class="love-logon-download" placeholder="密码"/>
+                       <a href="javascript:;" class="love-logon-enroll">立即注册</a>
+                   </div>
                </div>
             </div>
         </div>
@@ -355,7 +527,57 @@
                 }
             }
             leftMenun();
+            // 登录
+            var oBtnlogin = document.getElementById('J-btn-login');
+            var oLoveenter = document.getElementById('J-love-enter');
+                oBtnlogin.onclick = function() {
+                   oLoveenter.style.display="block";
+            }
+           //返回
+            var oEnterback = document.getElementById('J-enter-back');
+                oEnterback.onclick=function(){
+                    oLoveenter.style.display="none";
+                }
+            //注册
+            var oLovelogon =document.getElementById('J-love-logon');
+            var oLogonlogin =document.getElementById('J-logon-login');
+            var oEnterlogon = document.getElementById('J-enter-logon');
+
+               oEnterlogon.onclick = function(){
+                   oLovelogon.style.display="block";
+               }
+              oLogonlogin.onclick = function(){
+                    oLovelogon.style.display="none";
+              }
+            //返回
+            var oLogonback = document.getElementById('J-logon-back');
+
+                oLogonback.onclick = function(){
+                    oLovelogon.style.display="none";
+                    oLoveenter.style.display="none";
+
+                }
+
+              // function Loginonclik(overEle, pannerEle){
+              //   var oOverEle = document.getElementById('overEle');
+              //   var oPannerEle = document.getElementById('pannerEle');
+
+              //    oOverEle.onclick = function(){
+              //       oPannerEle.style ="block";
+              //    }
+
+              //     oOverEle.onclick = function(){
+              //       oPannerEle.style ="none";
+              //    }
+              // }
+              // Loginonclik('J-btn-login','J-love-enter');
+              // Loginonclik('J-enter-back','J-love-enter');
+              // Loginonclik('J-enter-logon','J-love-logon');
+              // Loginonclik('J-logon-login','J-love-logon')
+
         }
+
+
     </script>
 </body>
 </html>
