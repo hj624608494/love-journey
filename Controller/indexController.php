@@ -9,4 +9,8 @@ class indexController extends BaseController{
     public function goodAction(){
         $this->display();
     }
+
+    public function sliderAction(){
+        $this->display();
+    }
 }
