@@ -156,8 +156,8 @@ $love-fc-dull-gray: #333;
     width: 2rem;
     background-color: #fff;
     z-index: 2000;
-    -webkit-transform: translate3d(-4em,0,0);
-     transform: translate3d(-4em,0,0);
+    -webkit-transform: translate3d(-2rem,0,0);
+     transform: translate3d(-2rem,0,0);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
@@ -240,6 +240,156 @@ $love-fc-dull-gray: #333;
             }
             
         }
+    }
+}
+/*登录*/
+.love-top-login .form-shunt .love-enter{
+    position: absolute;
+    top:.3rem;
+    background:#ECEDEF;
+    height: 2rem;
+    width: 100%;
+    background: rgb(236, 237, 239);
+    padding: .1rem;
+    display:none;
+
+    a{
+        color: rgb(51, 51, 51);
+        font-size: 0.12rem;
+    }
+
+    .enter-back{
+        padding-right: 1.6rem;
+    }
+
+    .love-enter-controller{
+        margin-top: .2rem;
+    }
+
+    .love-enter-controller .love-enter-account,
+    .love-enter-controller .love-enter-download,
+    .love-enter-controller .love-enter-login{
+        display: block;
+        height: .25rem;
+        line-height: .25rem;
+        margin: 0 auto .08rem auto;
+        border-radius: .03rem;
+        border: none;
+        font-size: .1rem;
+        outline: 0;
+        width: 1.7rem; 
+        text-indent: 0.1rem;
+    }
+
+    .love-enter-controller .love-enter-login{
+        text-align: center;
+        margin-top: .17rem;
+    }
+
+    .love-enter-controller .love-enter-account{
+        background: #fff;
+    }
+
+    .love-enter-controller .love-enter-download{
+       color: #333;
+       background: #fff;
+    }
+    .love-enter-controller .love-enter-login{
+        background: #ff5777;
+        color: #fff; 
+    }
+    .love-enter-controller .enter-other-login{
+        text-align: center;
+        padding-top: .05rem; 
+    }
+    .love-enter-controller .enter-other-login .love-enter-iconqq{
+        margin-right: .1rem;
+        width: 1.42rem;
+        height: .35rem;
+        background-size: 100%; 
+    }
+    .love-enter-controller .enter-other-login .love-enter-iconweibo {
+        margin-right: .1rem;
+        width: 1.5rem;
+        height: .35rem;
+        background-size: 100%;
+    }
+    .love-enter-controller .enter-other-login a img{
+        width: .5rem;
+    }
+}
+/*注册*/
+.love-top-login .form-shunt .love-logon{
+    position: absolute;
+    top:.3rem;
+    background:#ECEDEF ;
+    height: 2rem;
+    width: 100%;
+    margin-top: .02rem;
+    background: rgb(236, 237, 239);
+    padding: .1rem;
+    display: none;
+
+    a{
+        color: rgb(51, 51, 51);
+        font-size: 0.12rem;
+    }
+
+    .logon-back{
+        padding-right: 1.6rem;
+    }
+
+    .love-logon-controller{
+        margin-top: .2rem;
+    }
+
+    .love-logon-controller .love-logon-num,
+    .love-logon-enroll, .love-logon-download{
+        display: block;
+        height: .25rem;
+        line-height: .25rem;
+        margin: 0 auto .08rem auto;
+        border-radius: .03rem;
+        border: none;
+        font-size: .1rem;
+        outline: 0;
+        width: 1.7rem; 
+        text-indent: 0.1rem;
+    }
+    .love-logon-controller .love-logon-box{
+        margin: 0 .1rem.08rem .3rem;
+        height: .25rem;
+        width: 1.7rem; 
+        background: #fff;
+        border-radius: .03rem;
+    }
+    .love-logon-controller .love-logon-box .love-logon-authcode{
+        height: .25rem;
+        line-height: .25rem;
+        border-radius: .03rem;
+        border: none;
+        font-size: .1rem;
+        outline: 0;
+        text-indent: .1rem;
+        width: 1.1rem;
+    }
+    .love-logon-controller .love-logon-box .love-logon-click{
+        font-size: .1rem;
+        border-left: 1px solid rgb(209, 209, 209);
+        background: #fff;
+        text-indent: .1rem;
+        padding: .03rem .08rem;
+        padding-right: 0;
+        color: #a9a9a9;
+    }
+    .love-logon-controller .love-logon-download{
+        margin-bottom: .15rem;
+    }
+        
+    .love-logon-controller .love-logon-enroll{
+        background: #ff5777;
+        color:#fff;
+        text-align: center;
     }
 }
 
