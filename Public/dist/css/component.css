@@ -1,0 +1,21 @@
+/**
+ * Components
+ * author : hanjie
+ */
+/**
+ * alertHint
+ */
+.alertHint {
+  display: inline-block;
+  position: fixed;
+  padding: 10px;
+  max-width: 200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  word-wrap: break-word;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -ms-transition: opacity .3s ease-out; }

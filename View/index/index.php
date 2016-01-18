@@ -15,6 +15,8 @@
     <!-- style -->
     <!-- <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.min.css"> -->
     <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.css">
+    <!-- component -->
+    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/component.css">
 
     <!-- According to the screen automatically set the font size -->
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
@@ -455,6 +457,9 @@
             }
             register();
 
+            $('.love-download-btn').click(function(){
+                util.alertHint('hanjiehanjiehanjiehanjiehanjiehanjiehanjie');
+            })
         })
     </script>
 </body>
