@@ -13,4 +13,8 @@ class indexController extends BaseController{
     public function sliderAction(){
         $this->display();
     }
+
+    public function waistAction(){
+        $this->display();
+    }
 }
