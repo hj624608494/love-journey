@@ -9,6 +9,7 @@
 .alertHint{
 	display: inline-block;
 	position: fixed;
+	z-index: 100000;
 	padding: 10px;
 	max-width: 200px;
 	background-color: rgba(0,0,0,.6);
