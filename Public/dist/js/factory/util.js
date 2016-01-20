@@ -4,9 +4,30 @@
  */
 window.util = function(){
     return {
+        /**
+         * [alertHint 迷你提示框]
+         * @param  {[type]} msg  [提示信息]
+         * @param  {[type]} time [提示时间]
+         * @return {[type]}      [description]
+         */
+        alertHint: function(msg, time){
+            var oHint = document.createElement('div');
+            oHint.className = 'alertHint';
+            oHint.innerHTML = msg;
+            document.body.appendChild(oHint);
 
-        alert: function(msg){
-            alert(msg);
+            var h = oHint.offsetHeight;
+            var w = oHint.offsetWidth;
+
+            oHint.style.left = "50%";
+            oHint.style.top = "50%";
+            oHint.style.marginTop = -(h/2)+'px';
+            oHint.style.marginLeft = -(w/2)+'px';
+            oHint.style.opacity = 1;
+
+            setTimeout(function(){
+                oHint.style.opacity = 0;
+            },time ?  time : 2000);
         },
 
         /**
@@ -48,6 +69,7 @@ window.util = function(){
 
             if (null != time && "" != time) {
                 if (time > 60 && time < 60 * 60) {
+                    oTime.hour = '00';
                     oTime.minute = parseInt(time / 60.0)
                     oTime.second = parseInt((parseFloat(time / 60.0) - parseInt(time / 60.0)) * 60);
                 } else if (time >= 60 * 60) {
@@ -56,6 +78,8 @@ window.util = function(){
                     oTime.second = parseInt((parseFloat((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60) -
                                    parseInt((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60)) * 60);
                 }else{
+                    oTime.hour = '00';
+                    oTime.minute = '00';
                     oTime.second = parseInt(time);
                 }
             }
