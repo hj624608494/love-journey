@@ -547,26 +547,18 @@
 <body>
      <div class="loveshop-container">
      <!-- 商品头部 -->
-        <div class="loveshop-header">
-            <div class="loveshop-header-swiper">
-                <div class="loveshop-header-img" >
-                    <img src="../../Public/dist/images/love-changeshop.jpg"  width="100%">
-                </div>
-                <div class="loveshop-header-sign">
-                    <div class="loveshop-header-icon">
-                        <a href="javascropt:;" class="header-icon-return iconfont icon-fanhui"></a>
-                    </div>
-                    <div class="loveshop-header-car">
-                        <a href="javascropt:;" class="header-icon-shopcar iconfont icon-gouwuche"></a>
-                    </div>
-                </div>
-                <div class="loveshop-header-ordina">
-                    <em>1</em>
-                    <i>/</i>
-                    9
-                </div>
+        <div class="love-header clearfix">
+            <span class="love-menu-icon iconfont icon-caidan" id="J_leftMenu"></span>
+
+            <div class="love-header-search clearfix">
+                <span class="iconfont icon-sousuo"></span>
+                <input type="text" />
+                <span class="iconfont icon-huiche"></span>
             </div>
+
+            <span class="love-shopcar iconfont icon-gouwuche"></span>
         </div>
+
      <!-- 商品介绍 -->
         <div class="loveshop-ntroduce">
             <div class="loveshop-ntroduce-title">   『预售送围巾』 气质夹棉加厚毛呢大衣  </div>
@@ -818,7 +810,34 @@
                 </div>
             </div>
         </div>
-     </div>
+    </div>
+
+    <!-- zepto -->
+    <script src="../../Public/dist/plugins/zepto/zepto.min.js"></script>
+    <!-- util -->
+    <script src="../../Public/dist/js/factory/util.js"></script>
+
+     <!-- swiper-tiny -->
+    <link rel="stylesheet" href="../../Public/dist/plugins/swiper-tiny/swiper.css">
+    <script src="../../Public/dist/plugins/swiper-tiny/swiper.js"></script>
+
+    <script>
+        $(function(){
+
+            function headerswiper(){
+
+                var swiper = new Swiper();
+                swiper.on('swiped', function(prev, current){
+                    // console.log(prev)
+                    // console.log(current)
+                    var ordina = (current+1) + '/' + $('.J_header_swiper .item').length;
+                    $('.J_header_ordina').html(ordina);
+                })
+            }
+            headerswiper();
+            
+        })
+    </script>
 </body>
 <script type="text/javascript">
     window.onload=function() {
