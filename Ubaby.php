@@ -7,7 +7,7 @@
  * @param array|null $value 配置值
  * @return array|null
  */
-function C($key, $value = null) {
+function C($key, $value = null) { 
     static $_config = array();
     $args = func_num_args();
     if ($args == 1) {
