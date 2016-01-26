@@ -60,10 +60,10 @@
           zoom: 1; }
 
     	.love-container {
-		  max-width: 750px;
-		  min-width: 320px;
-		  margin-left: auto;
-		  margin-right: auto; 
+			max-width: 750px;
+		    min-width: 320px;
+	        margin-left: auto;
+			margin-right: auto; 
 		}
 		/*love-header*/
 		.love-header{
@@ -103,6 +103,7 @@
 		    text-align: center;
 		    position: relative;
 		    color: #727272!important;
+		    padding-right: .2rem;
 		}
 	   /*love-app*/
 	    .love-app{
@@ -180,6 +181,10 @@
 		        line-height: 1.5; }
 
     </style>
+
+    <!-- According to the screen automatically set the font size -->
+    <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
+
 </head>
 <body>
     <div class="love-container">

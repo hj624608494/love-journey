@@ -9,7 +9,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
+
     <link rel="stylesheet" type="text/css" href="../../Public/dist/plugins/iconfont/iconfont.css">
+
+    
     <style type="text/css">
      * {
         margin: 0;
@@ -67,125 +70,15 @@
          * page index 
          * author: hj;
          */
-        .loveshop-container {
+        .love-container {
             max-width: 750px;
             min-width: 320px;
             margin-left: auto;
             margin-right: auto; 
         }
-        /*loveshop-header*/
-    
-        .loveshop-header{
-            width: 100%;
-            height: 4.5rem;
-            overflow: hidden;
-            position: relative;
-        }
-        .loveshop-header .loveshop-header-sign{
-            width: 100%;
-            height: .5rem;
-            position: absolute;
-            top:.1rem;
-            height:.5rem;
+        
 
-        }
-        .loveshop-header .loveshop-header-icon{
-            float: left;
-            padding-left: .1rem;
-        }
-        .loveshop-header .loveshop-header-car{
-            padding-right: .1rem;
-            float:right;
-
-        }
-        .loveshop-header .loveshop-header-icon .header-icon-return,.loveshop-header .loveshop-header-car .header-icon-shopcar{
-
-            height: .4rem;
-            border-radius: 50%;
-            color: rgb(255, 255, 255);
-            font-size: .18rem;
-            background: rgba(0, 0, 0, 0.4);
-            float:left;
-            padding: .1rem;
-        }
-        .loveshop-header .loveshop-header-ordina{
-            width: .5rem;
-            height: .2rem;
-            position: absolute;
-            bottom: .1rem;
-            right: .1rem;
-            border-radius: .4rem;
-            background: rgba(0, 0, 0, 0.298039);
-            color: rgb(255, 255, 255);
-            line-height: .2rem;
-            text-align:center;
-        }
-
-        /*loveshop-ntroduce*/
-        .loveshop-ntroduce{
-            width: 100%;
-            height: 3.8rem;
-            background: #ffffff;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-title{
-            width: 3.2rem;
-            height: .5rem;
-            margin: 0 auto;
-            line-height: .5rem;
-            color: #444444;
-            font-size: .18rem;
-            text-align: center;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-content{
-            width: 3.9rem;
-            height: 2.4rem;
-            margin: 0 auto;
-            line-height: .24rem;
-            text-align: center;
-            font-size: .18rem;
-            color: #999999;
-            margin-top:-.05rem;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-price{
-            width: 3.2rem;
-            height: .5rem;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .loveshop-ntroduce .loveshop-ntroduce-price .price-now{
-            font-size: .26rem;
-            font-weight: 800;
-            color: #444444;
-            margin-right: .05rem;
-            line-height: .5rem;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-price .price-before{
-            text-decoration: line-through;
-            color: #999999;
-            line-height: .1rem;
-            margin-right: .05rem;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-price .price-sale{
-            background: #F13E3A;
-            color: #ffffff;
-            padding: .05rem;
-            font-size: .12rem;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-other{
-            width: 2rem;
-            height: .3rem;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-other span{
-            color: #A8A8A8;
-            font-size: .14rem;
-            padding:0 .2rem;
-        }
-        .loveshop-ntroduce .loveshop-ntroduce-other .other-sale{
-            border-left: .01rem solid  #A8A8A8;
-        } 
+        
         /*mbanner-top*/
         .mbanner-top{
             width: 100%;
@@ -193,440 +86,440 @@
             background: #EAEAEA;
             border:.01rem solid #E0E0E0;
         }
-        /*.loveshop-download*/
-        .loveshop-download {
-            width: 100%;
-            background:#FAFAFA;
-        }
-        .loveshop-download .loveshop-download-app{
-            width: 100%;
-            overflow: hidden;
-        }
-        .loveshop-download .loveshop-download-app a img{
-            width: 100%;
-            border-bottom: .01rem solid #E0E0E0
-        }
-        .loveshop-download .loveshop-download-more{
-            height: .5rem;
-            background:#FAFAFA;
-            margin-left:.1rem;
-            
-        }
-        .loveshop-download .loveshop-download-more span{
-            line-height:.5rem;
-        }
-        .loveshop-download .loveshop-download-more span .download-more-fill{
-            color: #E8225B;
-            font-size: .2rem;
-
-        }
-        .loveshop-download .loveshop-download-more .download-more-full1{
-            
-            float: left;
-        }
-        .loveshop-download .loveshop-download-more .download-more-full2{
-            float: right;
-            padding-right: .2rem;
-
-        }
-        .loveshop-download .loveshop-download-more .download-more-full2 a{
-            color: #676767;
-        }
-
+        
 
         
-        /*loveshop-appraise*/
-        .loveshop-appraise{
-            background: #ffffff;
-            width: 100%;
-
-        }
-        .loveshop-appraise .loveshop-appraise-total{
-            width: 100%;
-            height: .5rem;
-            background: #ffffff;
-            border-bottom: .01rem solid #E0E0E0;
-        }
-        .loveshop-appraise .loveshop-appraise-total .appraise-total-count{
-            padding-left: .1rem;
-            float: left;
-        }
-        .loveshop-appraise .loveshop-appraise-total .appraise-total-count a{
-            line-height:.5rem;
-            font-size: .16rem;
-            color:#000000;
-        }
-        .loveshop-appraise .loveshop-appraise-total .appraise-total-more{
-            float: right;
-            padding-right: .2rem;
-            line-height: .5rem;
-        }
-        .loveshop-appraise .loveshop-appraise-total .appraise-total-more a{
-            color: #676767;
-        }
-
-        .loveshop-appraise .loveshop-appraise-details{
-            width: 100%;
-            height: auto;
-            border-bottom: .01rem solid #E0E0E0;
-            padding:0  .1rem;
-        }
-        .loveshop-appraise .loveshop-appraise-details .appraise-details{
-            width: 100%;
-            border-bottom: .01rem solid #E0E0E0;
-            background: #ffffff;
-        }
+        
+        
        
-        /*loveshop-collect*/
-        .loveshop-collect{
-            width:100%;
-            height: 1.3rem;
-            background: #ffffff;
-            border-bottom: .01rem solid #E0E0E0;
-        }
-        .loveshop-collect .loveshop-collect-marked{
-            width: 100%;
-            padding:.3rem 0;
-            background: #ffffff;
-            padding-bottom: .1rem;
-        }
-
-        .loveshop-collect .loveshop-collect-shop{
-            float: left;
-            padding:0 .2rem;
-        }
-        .loveshop-collect .loveshop-collect-shop a img{
-            width: .6rem;
-            height: .6rem;
-            border: .01rem solid #E0E0E0
-        }
-        .loveshop-collect .loveshop-collect-evaluate{
-    
-            float: left;
-        }
-        .loveshop-collect .loveshop-collect-evaluate .collect-evaluate-name{
-            font-size: .18rem;
-        }
-        .loveshop-collect .loveshop-collect-evaluate .collect-evaluate-num{
-            padding-top: .2rem;
-            font-size: .14rem;
-            color: #B3B3B3;
-        }
-        .loveshop-collect .loveshop-collect-evaluate .collect-evaluate-num .evaluate-num{
-            padding-right: .1rem;
-        }
-        .loveshop-collect .loveshop-collect-collect{
-            padding-right: .2rem;
-        }
-        .loveshop-collect .loveshop-collect-collect .loveshop-collect-favorites {
-            float: right;
-            width: .8rem;
-            height: .3rem;
-            border: .01rem solid #000000;
-            border-radius: 0.04rem;
-        }
-        .loveshop-collect .loveshop-collect-collect .loveshop-collect-favorites span{
-            line-height: .3rem;
-            text-align: center;
-            padding-left: .13rem;
-        }
-        .loveshop-collect .loveshop-collect-sati{
-            padding: 0 .2rem;
-        }
-        .loveshop-collect .loveshop-collect-sati ul li{
-            display: block;
-            float: left;
-            width: 33%;
-        }
-        .loveshop-collect .loveshop-collect-sati ul li span{
-            font-size: .15rem;
-        }
-        .loveshop-collect .loveshop-collect-sati ul li em{
-            color:#F1403C;
-            font-size: .14rem;
-        }
-        .loveshop-collect .loveshop-collect-sati ul li i{
-            font-size: .13rem;
-            color: #ffffff;
-            background:#F1403C;
-            padding: .015rem .018rem;
-        }
-        /*loveshop-pinkage*/
-        .loveshop-pinkage{
-            width: 100%;
-            height: 1rem;
-            background: #ffffff;
-        }
-        .loveshop-pinkage .loveshop-pinkage-freight{
-            line-height:1rem; 
-            padding: 0 .2rem;
-        }
-        /*.loveshop-pinkage .loveshop-pinkage-freight span{
-            padding: .1rem .05rem;
-            border: .01rem solid #000000;
-        }*/
-        .loveshop-pinkage .loveshop-pinkage-freight{
-            float: left;
-
-        }
-        .loveshop-pinkage .loveshop-pinkage-freight .pinkage-freight{
-            border: .01rem solid #AFAFAF;
-            padding: .1rem;
-        }
-        .loveshop-pinkage .loveshop-pinkage-all{
-            float: right;
-            padding: .415rem;
-
-        }
-        .loveshop-pinkage .loveshop-pinkage-all .pinkage-all{
-            border: .01rem solid #AFAFAF;
-            padding: .1rem .4rem;
-        }
-        /*loveshop-details*/
-        .loveshop-details {
-            width: 100%;
-            background: #ffffff;
-            border-bottom: .01rem solid #E0E0E0;  
-
-        }
-        .loveshop-details .loveshop-details-title{
-            width: 100%;
-            position: relative;
-            text-align: center;
-            padding: .1rem 0rem;
-        }
-        .loveshop-details .loveshop-details-title a{
-            display: block;
-            float: left;
-            width: 33%;
-            height: .2rem;
-            text-align: center;
-        }
-        .loveshop-details .loveshop-details-title a span{
-            font-size: .15rem;
-            color: #000000;
-        }
-        .loveshop-details  .loveshop-details-title .details-title2{
-            border-left:.01rem solid #EAEAEA; 
-            border-right:.01rem solid #EAEAEA; 
-
-        }
-        .loveshop-details .loveshop-details-line{
-            position: absolute;
-            top:40px;
-            left: 0rem;
-            background: red;
-            width: 33%;
-            height: .01rem;
-        }
-       /**/
-        .loveshop-details-all{
-            background: #ffffff;
-            width:100%;
-            height: auto;
-        }
-        .loveshop-details-all .details-all{
-            padding:.2rem 0;
-        }
-        .loveshop-details-all ul li{
-            display: none;
-        }
-        .loveshop-details-all ul li .details-all-explain{
-            width: 100%;
-            height: 2.3rem;
-            padding: 0 .1rem;
-        }
-
-        .loveshop-details-all ul li .details-all-explain .explain-start{
-            display: inline-block;
-            width: 1rem;
-            height: .01rem;
-            background:#AFAFAF;
-            float: left;
-        }
-        .loveshop-details-all ul li .details-all-explain .explain-text{
-            display: inline-block;
-            width: 4rem;
-            height: 2rem;
-            float: left;
-            padding: 0.3rem 0px;
-            color: rgb(114, 114, 114);
-            font-size: 0.16rem;
-        }
-        .loveshop-details-all ul li .details-all-explain .explain-end{
-            display: inline-block;
-            width: 1rem;
-            height: .01rem;
-            background:#AFAFAF;
-            float: right;
-        }
-        .loveshop-details-all ul li .details-all-dress{
-            width: 100%;
-           
-        }
-        .loveshop-details-all ul li .details-all-dress p{
-            padding: .1rem .1rem;
-            color:rgb(114, 114, 114); 
-        }
-        .loveshop-details-all ul li .details-all-dress .details-all-img img{
-            width: 100%;
-
-        }
-        /**/
-        .loveshop-foot-bottom{
-            width: 100%;
-            height: .5rem;
-            background: #ffffff;
-            border-top:.01rem solid  #AFAFAF;
-            position: fixed;
-            bottom: 0;
-            z-index: 200;
-            max-width: 750px;
-            background-color: rgba(255, 255, 255, 0.8);
-        }
-
-        .loveshop-foot-bottom .foot-bottom{
-            height: .5rem;
-            padding: 0 .1rem;
-        }
-        .loveshop-foot-talk , .loveshop-foot-like ,.loveshop-foot-shopcar{
-            display: inline-block;
-            height: .5rem;
-            vertical-align: middle;
-            float: left;
-
-        }
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-talk,.loveshop-foot-like{
-            width: .8rem;
-            height: .3rem;
-            line-height:.3rem;
-            text-align: center;
-        } 
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-talk span{
-            display:block;
-            font-size: .25rem;
-            color:rgb(114, 114, 114);  
-        }
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-like span{
-            display:block;
-            font-size: .3rem;
-            color:rgb(114, 114, 114);
-            border-left: .01rem solid #AFAFAF; 
-        }
-
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-talk .foot-talk{
-            font-size: .13rem;
-            margin-top: -.1rem;
-        }
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-like .foot-like{
-            font-size: .13rem;
-            margin-top: -.1rem;
-        }
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-shopcar{
-            height: .6rem;
-            line-height:.6rem;
-            margin-bottom: .1rem;
-            float: right;
-        }
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-shopcar span{
-            border: .01rem solid red;
-            padding: .1rem;
-        } 
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-shopcar .foot-shopcar{
-            color: red;
-        }
-        .loveshop-foot-bottom .foot-bottom .loveshop-foot-shopcar .foot-shopping{
-
-            margin-left: .1rem;
-            background: red;
-            padding: .09rem .2rem;
-            color: #ffffff;
-        }
+        
+        
     </style>
+
+    <!-- According to the screen automatically set the font size -->
+    <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
+
 </head>
 <body>
-     <div class="loveshop-container">
-     <!-- 商品头部 -->
-        <div class="love-header clearfix">
-            <span class="love-menu-icon iconfont icon-caidan" id="J_leftMenu"></span>
+     <div class="love-container">
+        
+        <style>
+            /*love-header*/
+            .love-header{
+                width: 100%;
+                height: 3rem;
+                overflow: hidden;
+                position: relative;
+            }
+            .love-header-swiper{
+                width: 100%;
+                height: 100%;
+            }
+            .love-header .love-header-sign{
+                width: 100%;
+                height: .5rem;
+                position: absolute;
+                top:.06rem;
+            }
+            .love-header .love-header-icon{
+                float: left;
+                margin-left: .06rem;
+            }
+            .love-header .love-header-car{
+                margin-right: .06rem;
+                float:right;
+            }
+            .love-header .love-header-icon .header-icon-return,
+            .love-header .love-header-car .header-icon-shopcar{
+                height: .3rem;
+                width: .3rem;
+                line-height: .3rem;
+                text-align: center;
+                border-radius: 50%;
+                color: rgb(255, 255, 255);
+                font-size: .16rem;
+                background: rgba(0, 0, 0, 0.4);
+                float: left;
+            }
+            .love-header .love-header-icon .header-icon-return{
+                text-indent: -.04rem;
+            }
+            .love-header .love-header-ordina{
+                width: .36rem;
+                height: .16rem;
+                position: absolute;
+                bottom: .06rem;
+                right: .06rem;
+                border-radius: .3rem;
+                background: rgba(0, 0, 0, 0.298039);
+                color: rgb(255, 255, 255);
+                line-height: .16rem;
+                text-align:center;
+                font-size: .1rem;
+            }
+        </style>
+        <!-- 商品头部 -->
+        <div class="love-header">
+            <div class="love-header-swiper">
+                <div class="love-header-img swiper J_header_swiper" >
+                    <div class="item">
+                        <img src="../../Public/dist/images/love-changeshop.jpg"  width="100%">
+                    </div>
+                    <div class="item">
+                        <img src="../../Public/dist/images/love-changeshop.jpg"  width="100%">
+                    </div>
 
-            <div class="love-header-search clearfix">
-                <span class="iconfont icon-sousuo"></span>
-                <input type="text" />
-                <span class="iconfont icon-huiche"></span>
+                    <div class="item">
+                        <img src="../../Public/dist/images/love-changeshop.jpg"  width="100%">
+                    </div>
+                </div>
+                <div class="love-header-sign">
+                    <div class="love-header-icon">
+                        <a href="javascropt:;" class="header-icon-return iconfont icon-fanhui"></a>
+                    </div>
+                    <div class="love-header-car">
+                        <a href="javascropt:;" class="header-icon-shopcar iconfont icon-gouwuche"></a>
+                    </div>
+                </div>
+                <div class="love-header-ordina">
+                    <span class="J_curOrdina">1</span>
+                    <span>/</span>
+                    <span class="J_ordinaLen"></span>
+                </div>
             </div>
-
-            <span class="love-shopcar iconfont icon-gouwuche"></span>
         </div>
 
-     <!-- 商品介绍 -->
-        <div class="loveshop-ntroduce">
-            <div class="loveshop-ntroduce-title">   『预售送围巾』 气质夹棉加厚毛呢大衣  </div>
-            <div class="loveshop-ntroduce-content">
-                超级推荐的一款呢大衣 简单好穿大牌感
+        <style>
+            /*love-ntroduce*/
+            .love-ntroduce{
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                background: #ffffff;
+            }
+            .love-ntroduce .love-ntroduce-title{
+                width: 100%;
+                height: .4rem;
+                line-height: .4rem;
+                color: #444444;
+                font-size: .14rem;
+                text-align: center;
+                /**/
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .love-ntroduce .love-ntroduce-content{
+                width: 100%;
+                height: 1.4rem;
+                padding: 0 .06rem;
+                line-height: .24rem;
+                text-align: center;
+                font-size: .12rem;
+                color: #999999;
+                /**/
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+            }
+            .love-ntroduce .love-ntroduce-price{
+                width: 100%;
+                height: .4rem;
+                line-height: .4rem;
+                text-align: center;
+            }
 
-                在颜色的选择上 其实有做很多个颜色的样衣
+            .love-ntroduce .love-ntroduce-price .price-now{
+                font-size: .2rem;
+                font-weight: 800;
+                color: #444444;
+                margin-right: .05rem;
+                vertical-align: bottom;
+            }
+            .love-ntroduce .love-ntroduce-price .price-before{
+                position: relative;
+                top: .022rem;
+                text-decoration: line-through;
+                color: #999999;
+                margin-right: .05rem;
+                vertical-align: bottom;
+            }
+            .love-ntroduce .love-ntroduce-price .price-sale{
+                background: #F13E3A;
+                color: #ffffff;
+                padding: .02rem .04rem;
+                font-size: .1rem;
+                vertical-align: bottom;
+            }
+            .love-ntroduce .love-ntroduce-other{
+                width: 2rem;
+                height: .24rem;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .love-ntroduce .love-ntroduce-other span{
+                color: #A8A8A8;
+                font-size: .1rem;
+                padding:0 .2rem;
+            }
+            .love-ntroduce .love-ntroduce-other .other-sale{
+                border-left: .01rem solid  #A8A8A8;
+            } 
+        </style>
+        <!-- 商品介绍 -->
+        <div class="love-ntroduce">
+            <div class="love-ntroduce-title">预售送围巾 气质夹棉加厚毛呢大衣</div>
+            <div class="love-ntroduce-content">
+                超级推荐的一款呢大衣 简单好穿大牌感 在颜色的选择上 其实有做很多个颜色的样衣 然后在室外室内都试穿了 最后选定出来的这两个洋气又好穿的颜色
 
-                然后在室外室内都试穿了
+                这款版型搭配深驼和正红非常有气质 长度属于中长款 就是很大气的那种长度（预售前200名赠送模特同款黑色围巾噢！！！）简单搭配针织衫、连衣裙、打底裤、打底袜就很时髦
 
-                最后选定出来的这两个洋气又好穿的颜色
-
-                这款版型搭配深驼和正红非常有气质
-
-                长度属于中长款 就是很大气的那种长度
-                （预售前200名赠送模特同款黑色围巾噢！！！）
-                简单搭配针织衫、连衣裙、打底裤、打底袜就很时髦
-
-                面料是韩国进口的针织羊绒
-
-                同时具备性价比和好品质
-
-                中长款设计刚刚露出身体最瘦的小腿部分，显瘦又有女人味^^
-
-                轻洗轻揉， 请勿机洗。
+                面料是韩国进口的针织羊绒 同时具备性价比和好品质 中长款设计刚刚露出身体最瘦的小腿部分，显瘦又有女人味^^ 轻洗轻揉， 请勿机洗。
             </div>
-            <div class="loveshop-ntroduce-price">
+            <div class="love-ntroduce-price">
                 <span class="price-now">¥235.20</span>
                 <span class="price-before">¥336.00</span>
                 <span class="price-sale">7折</span>
             </div>
-            <div class="loveshop-ntroduce-other">
+            <div class="love-ntroduce-other">
                 <span>全国包邮</span>
                 <span class="other-sale">销量298</span>
             </div>
         </div>
-     <!--  -->
+        
+        <!--  -->
         <div class="mbanner-top"></div>
-     <!-- app下载 -->
-        <div class="loveshop-download">
-            <div class="loveshop-download-app">
+        
+        <style>
+            /*.love-download*/
+            .love-download {
+                width: 100%;
+                background:#FAFAFA;
+            }
+            .love-download .love-download-app{
+                width: 100%;
+                overflow: hidden;
+            }
+            .love-download .love-download-app a img{
+                width: 100%;
+                border-bottom: .01rem solid #E0E0E0
+            }
+            .love-download .love-download-more{
+                width: 100%;
+                height: .32rem;
+                line-height: .32rem;
+                background: #FAFAFA;
+                padding: 0 .08rem;
+                
+            }
+            .love-download .love-download-more .download-more-full1{
+                float: left;
+                font-size: .1rem;
+            }
+            .love-download .love-download-more .download-more-full2{
+                float: right;
+            }
+            .love-download .love-download-more .download-more-full2 a{
+                color: #676767;
+                font-size: .1rem;
+            }
+            .love-download .download-more-mark{
+                display: inline-block;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+        </style>
+        <!-- app下载 -->
+        <div class="love-download">
+            <div class="love-download-app">
                 <a href="javascript:;">
                     <img src="../../Public/dist/images/love-top.jpg">
                 </a>
             </div>
-            <div class="loveshop-download-more" width:"100%">
+            <div class="love-download-more" width:"100%" id="J-download-more">
                 
                 <span class="download-more-full2" id="J-download-more-full2">
                     <a href="javascript:;">更多
-                        <i class="download-
-                        more-mark iconfont icon-fanhui"></i>
+                        <i class="download-more-mark iconfont icon-fanhui"></i>
                     </a>
                 </span>
                 <span class="download-more-full1">
-                    <i class="download-more-fill">.</i>
                     全店满279元减20元
                 </span>
             </div>
-            <!-- 弹出优惠券 -->
-            <div>
-                
-            </div>
         </div>
-     <!--  -->
+        <style>
+        .love-coupon{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            display: none;
+        }
+        .love-coupon .love-coupon-concessions{
+            background: #ffffff;
+            width: 90%;
+            border-radius: .05rem;
+        }
+        .love-coupon .love-coupon-concessions h1{
+            text-align: center;
+            color: #f95578;
+            font-size: .13rem;
+            line-height: .3rem;
+            border-bottom: .01rem solid #e1e1e1;
+        }
+        .love-coupon .love-coupon-concessions ul li{
+            border-bottom: .01rem solid #e1e1e1;
+            padding: 0 .1rem;
+        }
+        .love-coupon .love-coupon-concessions ul li span{
+            color: #5E5E5E;
+            line-height: .3rem;
+            font-size: .1rem;
+        }
+        .love-coupon .love-coupon-concessions ul li a{
+            display: inline-block;
+            width: .5rem;
+            height: .2rem;
+            border:.01rem solid #FF5777;
+            float: right;
+            line-height: .2rem;
+            margin-top: .07rem;
+            text-align: center;
+            color: #f95578;
+            border-radius: .03rem;
+            font-size: .1rem;
+        }
+        .love-coupon .love-coupon-concessions .love-coupon-ok{
+            
+            padding: .1rem 0;
+            text-align: center;
+        }
+        .love-coupon .love-coupon-concessions .love-coupon-ok span{
+            display: inline-block;
+            /*text-decoration: none;
+            vertical-align: middle;
+            white-space: nowrap;*/
+            border: none;
+            width: 1.1rem;
+            height: .3rem;
+            line-height: .3rem;
+            color: #ffffff;
+            border-radius: .02rem;
+            font-size: .13rem;
+            text-align: center;
+            background: #f95578;
+        }
+        </style>
+
+        <!-- 弹出优惠券 -->
+            <div class="love-coupon" id="J-love-coupon">
+                <div class="love-coupon-concessions">
+                    <h1>店铺优惠</h1>
+                    <ul>
+                        <li>
+                            <span>全店满198元减5元</span>
+                            <a href="javascript:;">点击领取</a>
+                        </li>
+                        <li>
+                            <span>全店满198元减5元</span>
+                            <a href="javascript:;">点击领取</a>
+                        </li>
+                        <li>
+                            <span>全店满198元减5元</span>
+                            <a href="javascript:;">点击领取</a>
+                        </li>
+                    </ul>
+                    <div class="love-coupon-ok" id="J-coupon-ok">
+                        <span>我知道了</span>
+                    </div>
+                </div>
+            </div>
+
+        <style>
+        .love-mask{
+            display:none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1001
+            ;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 100;
+        }
+        </style>
+        <!-- mask -->
+        <div class="love-mask" id="J_mask"></div>
+        
+
+        <!--  -->
         <div class="mbanner-top"></div>
-     <!-- 累计评价 -->
-        <div class="loveshop-appraise">
-            <div class="loveshop-appraise-total">
+        
+        <style>
+            /*love-appraise*/
+            .love-appraise{
+                background: #ffffff;
+                width: 100%;
+            }
+            .love-appraise .love-appraise-total{
+                width: 100%;
+                height: .4rem;
+                line-height: .4rem;
+                background: #ffffff;
+                border-bottom: .01rem solid #E0E0E0;
+                padding: 0 .08rem;
+            }
+            .love-appraise .love-appraise-total .appraise-total-count{
+                float: left;
+            }
+            .love-appraise .love-appraise-total .appraise-total-count a{
+                font-size: .1rem;
+                color:#000000;
+            }
+            .love-appraise .love-appraise-total .appraise-total-more{
+                float: right;
+                
+            }
+            .love-appraise .love-appraise-total .appraise-total-more .download-more-mark{
+                display: inline-block;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+            .love-appraise .love-appraise-total .appraise-total-more a{
+                color: #676767;
+                font-size: .1rem;
+            }
+
+            .love-appraise .love-appraise-details{
+                width: 100%;
+                height: auto;
+                border-bottom: .01rem solid #E0E0E0;
+                padding:0  .08rem;
+            }
+
+            .love-appraise-details .love-appraise-item1{
+                width: 100%;
+                border-bottom: .01rem solid #E0E0E0;
+            }
+        </style>
+        <!-- 累计评价 -->
+        <div class="love-appraise">
+            <div class="love-appraise-total" id="J-appraise-total">
                 <span class="appraise-total-count">
                     <a href="javascript:;">累计评价 17</a>
                 </span>
@@ -636,53 +529,116 @@
                     </a>
                 </span>
             </div>
-            <div class="loveshop-appraise-details">
-                <div class="appraise-details">
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                </div>
-                <div class="appraise-details">
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                11111111111111111111111111111
-                </div>
+
+            <div class="love-appraise-details">
+                <div class="love-appraise-item1">1</div>
+                <div class="love-appraise-item">2</div>
             </div>
         </div>
-     <!--  -->
+        
+        <!--  -->
         <div class="mbanner-top"></div>
-     <!-- 收藏 -->
-        <div class="loveshop-collect">
-            <div class="loveshop-collect-marked clearfix">
-                <div class="loveshop-collect-shop">
+        <style type="text/css">
+        /*love-collect*/
+        .love-collect{
+            width:100%;
+            height: 0.8rem;
+            background: #ffffff;
+            border-bottom: .01rem solid #E0E0E0;
+        }
+        .love-collect .love-collect-marked{
+            width: 100%;
+            padding:.1rem 0;
+            background: #ffffff;
+            padding-bottom: .1rem;
+        }
+
+        .love-collect .love-collect-shop{
+            float: left;
+            padding:0 .1rem;
+        }
+        .love-collect .love-collect-shop a img{
+            width: .4rem;
+            height: .4rem;
+            border: .01rem solid #E0E0E0;
+        }
+        .love-collect .love-collect-evaluate{
+    
+            float: left;
+        }
+        .love-collect .love-collect-evaluate .collect-evaluate-name{
+            font-size: .12rem;
+        }
+        .love-collect .love-collect-evaluate .collect-evaluate-num{
+            padding-top: .2rem;
+            font-size: .08rem;
+            color: #B3B3B3;
+        }
+        .love-collect .love-collect-evaluate .collect-evaluate-num .evaluate-num{
+            padding-right: .05rem;
+        }
+        .love-collect .love-collect-collect{
+            padding-right: .2rem;
+        }
+        .love-collect .love-collect-collect .love-collect-favorites {
+            float: right;
+            width: .5rem;
+            height: .2rem;
+            border: .01rem solid #000000;
+            border-radius: 0.04rem;
+            margin-top: .05rem;
+        }
+        .love-collect .love-collect-collect .love-collect-favorites span{
+            line-height: .2rem;
+            font-size: .12rem;
+        }
+        .love-collect .love-collect-sati ul li{
+            display: block;
+            float: left;
+            width: 33%;
+            padding: 0 .05rem;
+        }
+        .love-collect .love-collect-sati ul li span{
+            font-size: .09rem;
+        }
+        .love-collect .love-collect-sati ul li em{
+            color:#F1403C;
+            font-size: .09rem;
+        }
+        .love-collect .love-collect-sati ul li i{
+            font-size: .09rem;
+            color: #ffffff;
+            background:#F1403C;
+        }
+
+        </style>
+        
+        <!-- 收藏 -->
+        <div class="love-collect">
+            <div class="love-collect-marked clearfix">
+                <div class="love-collect-shop">
                     <div class="collect-shop-logo">
                         <a href="javascript:;">
                             <img src="../../Public/dist/images/love-dianpulogo.jpg">
                         </a>
                     </div>
                 </div>
-                <div class="loveshop-collect-evaluate">
+                <div class="love-collect-evaluate">
                     <p class="collect-evaluate-name">邂逅优品</p>
                     <p class="collect-evaluate-num">
                         <span class="evaluate-num"> 总销量78304</span>
                         <span>收藏数30658</span>
                     </p>
                 </div>
-                <div class="loveshop-collect-collect">
-                    <div class="loveshop-collect-favorites">
+                <div class="love-collect-collect">
+                    <div class="love-collect-favorites">
                         <span>
                             + 收藏
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="loveshop-collect-sati">
+            <div class="love-collect-sati">
                 <ul class="center">
                     <li>
                         <span>描述相符</span>
@@ -702,20 +658,95 @@
                 </ul>
             </div>
         </div>
-     <!--  -->
-        <div class="loveshop-pinkage">
-            <div class="loveshop-pinkage-freight">
+        
+        <style type="text/css">
+        /*love-pinkage*/
+        .love-pinkage{
+            width: 100%;
+            height: 1rem;
+            background: #ffffff;
+        }
+        .love-pinkage .love-pinkage-freight{
+            line-height:1rem; 
+            padding: 0 .1rem;
+        }
+        .love-pinkage .love-pinkage-freight{
+            float: left;
+        }
+        .love-pinkage .love-pinkage-freight .pinkage-freight{
+            border: .01rem solid #AFAFAF;
+            padding: .1rem;
+            font-size: .12rem;
+        }
+        .love-pinkage .love-pinkage-all{
+            float: right;
+            line-height: 1rem;
+            padding-right: .1rem;
+
+        }
+        .love-pinkage .love-pinkage-all .pinkage-all{
+            border: .01rem solid #AFAFAF;
+            padding: .1rem .2rem;
+            font-size: .12rem;
+        }
+        </style>
+        <!--  -->
+        <div class="love-pinkage">
+            <div class="love-pinkage-freight">
                 <span class="pinkage-freight">全部商品（197）</span>
             </div>
-            <div class="loveshop-pinkage-all">
+            <div class="love-pinkage-all">
                 <span class="pinkage-all">进入小店</span>
             </div>
         </div>
-     <!--  -->
+        
+        <!--  -->
         <div class="mbanner-top"></div>
-     <!-- 图文详情 -->
-        <div class="loveshop-details">
-                <div class="loveshop-details-title clearfix" id="J-details-title">
+        <style>
+
+        /*love-details*/
+        .love-details {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: .01rem solid #E0E0E0;  
+
+        }
+        .love-details .love-details-title{
+            width: 100%;
+            position: relative;
+            text-align: center;
+            padding: .1rem 0rem;
+        }
+        .love-details .love-details-title a{
+            display: block;
+            float: left;
+            width: 33%;
+            height: .2rem;
+            text-align: center;
+        }
+        .love-details .love-details-title a span{
+            font-size: .15rem;
+            color: #000000;
+        }
+        .love-details  .love-details-title .details-title2{
+            border-left:.01rem solid #EAEAEA; 
+            border-right:.01rem solid #EAEAEA; 
+
+        }
+        .love-details .love-details-line{
+            position: absolute;
+            top:.4rem;
+            left: 0rem;
+            background: red;
+            width: 33%;
+            height: .01rem;
+        }
+       
+      </style>
+
+        <!-- 图文详情 -->
+        <div class="love-details">
+                <div class="love-details-title clearfix" id="J-details-title">
                     <a href="javascript:;" class="details-title1 " id="J-details-title1">
                         <span>图文详情</span>
                        
@@ -726,14 +757,160 @@
                         <span>热卖推荐</span>
                        
                     </a>
-                    <i class="loveshop-details-line" id="J-details-line" ></i>
+                    <i class="love-details-line" id="J-details-line" ></i>
                 </div>
         </div>
-    <!--  -->
-        <div class="loveshop-details-all clearfix" id="J-details-all">
+        <style>
+      /**/
+        .love-details-all{
+            background: #ffffff;
+            width:100%;
+            height: auto;
+        }
+        .love-details-all .details-all{
+            padding:.2rem 0;
+        }
+        .love-details-all ul li{
+            display: none;
+        }
+        .love-details-all ul li .details-all-explain{
+            width: 100%;
+            height: 1.6rem;
+            padding: 0 .1rem;
+        }
+
+        .love-details-all ul li .details-all-explain .explain-start{
+            display: inline-block;
+            width: .5rem;
+            height: .01rem;
+            background:#AFAFAF;
+            float: left;
+        }
+        .love-details-all ul li .details-all-explain .explain-text{
+            display: inline-block;
+            float: left;
+            padding: 0.1rem 0px;
+            color: rgb(114, 114, 114);
+            font-size: 0.115rem;
+        }
+        .love-details-all ul li .details-all-explain .explain-end{
+            display: inline-block;
+            width: .5rem;
+            height: .01rem;
+            background:#AFAFAF;
+            float: right;
+        }
+        .love-details-all ul li .details-all-dress{
+            width: 100%;
+           
+        }
+        .love-details-all ul li .details-all-dress p{
+            padding: .1rem .1rem;
+            color:rgb(114, 114, 114); 
+            font-size: .12rem;
+        }
+        .love-details-all ul li .details-all-dress .details-all-img img{
+            width: 100%;
+
+        }
+        /*产品参数*/
+        .love-details-all .details-all-parameter{
+            margin-bottom: .4rem;
+        }
+        .love-details-all .details-all-parameter .item{
+            padding: 0 .1rem;
+            display: block;
+        }
+        .love-details-all .details-all-parameter .item table{
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+           
+        }
+        .love-details-all .details-all-parameter .item table tbody tr{
+            display:table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+            border-bottom: .01rem solid #EAEAEA;
+           
+        }
+        .love-details-all .details-all-parameter .item table tbody tr td{
+            display:table-cell;
+            vertical-align: inherit;
+            font-weight: 400;
+            line-height: .23rem;
+            text-align: left;
+            color: #727272;
+            width: 33%;
+            font-size: .1rem;
+        }
+        .love-details-all .details-all-parameter .item td:first-child{
+            width: 33%;
+        }
+        .love-details-all .details-all-parameter .param-list{
+            padding: 0 .1rem;
+            clear: both;
+
+        }
+        .love-details-all .details-all-parameter .param-list div{
+            border-bottom: .01rem solid #EAEAEA;
+            height: .23rem;
+
+        }
+
+        .love-details-all .details-all-parameter .param-list div span{
+            display: inline-block;
+            line-height: .23rem;
+            font-size: .1rem;
+            color: #727272; 
+
+        }
+        .love-details-all .details-all-parameter .param-list div .param-list-other{
+            color: #EB4B6A;
+            width: 1rem;
+            margin-left: .15rem;
+        }
+        .love-details-all .details-all-parameter .param-list div .param-list-specific{
+            width: .5rem;
+        }
+        /*热门推荐*/
+        .love-details-all .details-all .details-all-hot{
+            padding: 0 .1rem;
+            width: 100%;
+            height: auto;
+            margin-bottom: .4rem;
+
+        }
+        .love-details-all .details-all .details-all-hot .all-hot-img{
+            height: 1.3rem;
+            width: .7rem;
+            overflow: hidden;
+            float: left;
+            margin-left: .05rem;
+        }
+        .love-details-all .details-all .details-all-hot .all-hot-img a img{
+            height: 1rem;
+            overflow: hidden;
+        }
+        .love-details-all .details-all .details-all-hot .all-hot-img p {
+            color: #727272;
+            font-size: .09rem;
+        }
+        .love-details-all .details-all .details-all-hot .all-hot-img span{
+            color: #727272;
+            font-size: .09rem;
+        }
+        .love-details-all .details-all .details-all-hot .all-hot-img .hot-img-price{
+            margin-right: .05rem;
+        }
+
+      </style>
+        
+        <!--  -->
+        <div class="love-details-all clearfix" id="J-details-all">
                 <div class="details-all clearfix">
                     <ul>
-                        <li style="display:block">
+                        <li style="display:block" id="J-details">
                             <div class="details-all-explain">
                                 <p class="explain-start">
                                 </p>
@@ -771,7 +948,7 @@
                                     <img src="../../Public/dist/images/love-img4.jpg">
                                 </div>
                             </div>
-                             <div class="details-all-dress">
+                            <div class="details-all-dress">
                                 <p>整体款式</p>
                                 <div class="details-all-img">
                                     <img src="../../Public/dist/images/love-img5.jpg">
@@ -785,31 +962,265 @@
                                     <img src="../../Public/dist/images/love-img13.jpg">
                                 </div>
                             </div>
+                            <!-- 产品参数 -->
                         </li>
-                        <li>
                             
+                        <li>
+                            <div class="details-all-parameter">
+                                 <div class="item">
+                                     <table>
+                                         <tbody>
+                                             <tr>
+                                                 <td>尺码</td>
+                                                 <td>xs</td>
+                                                 <td>s</td>
+                                                 <td>m</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>衣长</td>
+                                                 <td>88</td>
+                                                 <td>89</td>
+                                                 <td>90</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>袖长</td>
+                                                 <td>39</td>
+                                                 <td>40</td>
+                                                 <td>41</td>
+                                             </tr>
+                                             <tr>
+                                                  <td>胸围</td>
+                                                  <td>110</td>
+                                                  <td>114</td>
+                                                  <td>118</td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                 </div>
+                                 <div class="param-list clearfix">
+                                      <div>
+                                          <span class="param-list-specific">细节</span>
+                                          <span class="param-list-other">其他</span>
+                                      </div>
+                                       <div>
+                                          <span class="param-list-specific">袖型</span>
+                                          <span class="param-list-other">其他袖型</span>
+                                      </div>
+                                       <div>
+                                          <span class="param-list-specific">风格</span>
+                                          <span class="param-list-other">日韩，清新，甜美</span>
+                                      </div>
+                                       <div>
+                                          <span class="param-list-specific">材质</span>
+                                          <span class="param-list-other">毛呢</span>
+                                      </div>
+                                      <div>
+                                          <span class="param-list-specific">版型</span>
+                                          <span class="param-list-other">O型(茧型)</span>
+                                      </div>
+                                      <div>
+                                          <span class="param-list-specific">衣长</span>
+                                          <span class="param-list-other">长款(81cm-100cm)</span>
+                                      </div>
+                                      <div>
+                                          <span class="param-list-specific">衣门襟</span>
+                                          <span class="param-list-other" >一粒单排扣</span>
+                                      </div>
+                                      <div>
+                                          <span class="param-list-specific">图案</span>
+                                          <span class="param-list-other">其他</span>
+                                      </div>
+                                      <div>
+                                          <span class="param-list-specific">袖长</span>
+                                          <span class="param-list-other">长袖</span>
+                                      </div>
+                                 </div>
+                                
+                            </div>
+
                         </li>
-                        <li>3333</li>
+                        <!-- 热门推荐 -->
+                        <li>
+                          <div class="details-all-hot clearfix">
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot1.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot2.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot3.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot4.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot4.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot3.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot6.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot7.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                              <div class="all-hot-img">
+                                <a href="javascript:;"><img src="../../Public/dist/images/love-hot4.jpg"></a>
+                                <p>冬日一抹阳光</p>
+                                <p>
+                                <span class="hot-img-price">¥198.8</span>
+                                <span class="iconfont icon-xin hot-img-num">2540</span>
+                                </p>
+                              </div>
+                          </div> 
+
+                        </li>
                     </ul>
                 </div>
         </div>
-    <!--  -->
-        <div class="loveshop-foot-bottom">
+        
+        <style>
+        .love-foot-bottom{
+            width: 100%;
+            height: .35rem;
+            background: #ffffff;
+            /*border-top:.01rem solid  #AFAFAF;*/
+            position: fixed;
+            bottom: 0;
+            z-index: 100;
+            max-width: 750px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .love-foot-bottom .foot-bottom{
+            height: .35rem;
+        }
+        .love-foot-talk , .love-foot-like ,.love-foot-shopcar{
+            display: inline-block;
+            height: .3rem;
+            vertical-align: middle;
+            float: left;
+
+        }
+        .love-foot-bottom .foot-bottom .love-foot-talk,.love-foot-like{
+            width: .45rem;
+            height: .3rem;
+            line-height:.3rem;
+            text-align: center;
+        } 
+        .love-foot-bottom .foot-bottom .love-foot-talk span{
+            display:block;
+            font-size: .15rem;
+            color:rgb(114, 114, 114);  
+        }
+        .love-foot-bottom .foot-bottom .love-foot-like span{
+            display:block;
+            font-size: .19rem;
+            color:rgb(114, 114, 114);
+            border-left: .01rem solid #AFAFAF; 
+        }
+
+        .love-foot-bottom .foot-bottom .love-foot-talk .foot-talk{
+            font-size: .09rem;
+            margin-top: -.18rem;
+        }
+        .love-foot-bottom .foot-bottom .love-foot-like .foot-like{
+            font-size: .09rem;
+            margin-top: -.18rem;
+        }
+        .love-foot-bottom .foot-bottom .love-foot-shopcar{
+            padding-right: .1rem;
+            float: right;
+            margin-top:.05rem;
+        }
+        .love-foot-bottom .foot-bottom .love-foot-shopcar span{
+            border: .01rem solid red;
+           
+        } 
+        .love-foot-bottom .foot-bottom .love-foot-shopcar .foot-shopcar{
+            display: inline-block;
+            color: red;
+            float: left;
+            width: .7rem;
+            height: .25rem;
+            text-align: center;
+            line-height: .25rem;
+            font-size: .1rem;
+
+        }
+        .love-foot-bottom .foot-bottom .love-foot-shopcar .foot-shopping{
+            margin-left: .1rem;
+            display: inline-block;
+            width: .7rem;
+            height: .25rem;
+            line-height: .25rem;
+            text-align: center;
+            float: right;
+            background: red;
+            color: #ffffff;
+            font-size: .1rem;
+        }
+        </style>
+        <!--  -->
+        <div class="love-foot-bottom">
             <div class="foot-bottom">
-                <div class="loveshop-foot-talk">
+                <div class="love-foot-talk">
                     <span class="iconfont icon-liaotian"></span>
                     <span class="foot-talk">私聊</span>
                 </div>
-                <div class="loveshop-foot-like">
+                <div class="love-foot-like">
                     <span class="iconfont icon-xin"></span>
                     <span class="foot-like">喜欢</span>
                 </div>
-                <div class="loveshop-foot-shopcar">
+                <div class="love-foot-shopcar">
                     <span class="foot-shopcar">加入购物车</span>
                     <span class="foot-shopping">立即购买</span>
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- zepto -->
@@ -830,9 +1241,13 @@
                 swiper.on('swiped', function(prev, current){
                     // console.log(prev)
                     // console.log(current)
-                    var ordina = (current+1) + '/' + $('.J_header_swiper .item').length;
-                    $('.J_header_ordina').html(ordina);
+                    var curOrdina = (current+1)
+                    var ordinaLen = $('.J_header_swiper .item').length;
+                    $('.J_curOrdina').html(curOrdina);
+                    $('.J_ordinaLen').html(ordinaLen);
                 })
+
+                $('.J_ordinaLen').html($('.J_header_swiper .item').length);
             }
             headerswiper();
             
@@ -864,6 +1279,33 @@
 
              }
         }
+        // function Preferential(){
+        //     $('#J-download-more').click(function(){
+        //         $('#love-coupon').css('display', 'block');
+        //         $('#love-mask').css('display', 'block');
+        //     })
+        //     $('#J-coupon-ok').click(function(){
+        //         $('#love-coupon').css('display', 'none');
+        //         $('#love-mask').css('display', 'none');
+        //     })
+        // }
+        // Preferential();
+
+
+        var oDownloadmore = document.getElementById('J-download-more');
+        var oLovecoupon = document.getElementById('J-love-coupon');
+        var oMask = document.getElementById('J_mask');
+        var oCouponok = document.getElementById('J-coupon-ok');
+
+            oDownloadmore.onclick=function(){
+                oLovecoupon.style.display="block"
+                oLovecoupon.style.display="-webkit-box;"
+                oMask.style.display="block"
+            }
+            oCouponok.onclick=function(){
+                 oLovecoupon.style.display="none"
+                oMask.style.display="none"
+            }
         
     }
 </script>
