@@ -45,43 +45,7 @@ function utf8_strlen($string = null) {
     return count($match[0]);
 }
 
-/**
- * 隐藏没有的权限按钮
- * @return mixed
- */
-function authDisplay(){
-    if($_SESSION['role_id'] != 1){
-        $allAuth = DB()->select("sys_role_menu_fun",[
-            "[>]sys_menu_fun"=>["menu_fun_id"=>"id"]
-        ],[
-            "sys_menu_fun.uri"
-        ],[
-            "sys_role_menu_fun.role_id"=>$_SESSION['role_id']
-        ]);
-        $path = explode('/',$_SERVER["PATH_INFO"])[1];
-        foreach($allAuth as $key=>$value){
-            $page = explode('/',$value['uri'])[1];
-            if($page == $path){
-                $a = explode('/',$value['uri'])[2];
-                $auth["$a"] = $a;
-            }
-        }
-        return $auth;
-    }else{
-        $allAuth = DB()->select("sys_menu_fun",[
-            "sys_menu_fun.uri"
-        ]);
-        $path = explode('/',$_SERVER["PATH_INFO"])[1];
-        foreach($allAuth as $key=>$value){
-            $page = explode('/',$value['uri'])[1];
-            if($page == $path){
-                $a = explode('/',$value['uri'])[2];
-                $auth["$a"] = $a;
-            }
-        }
-        return $auth;
-    }
-}
+
 
 
 
