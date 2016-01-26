@@ -10,6 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="../../Public/dist/plugins/iconfont/iconfont.css">
+    <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
     <style type="text/css">
     	* {
         margin: 0;
@@ -168,9 +169,9 @@
 		      width: 25%;
 		      text-align: center;
 		      margin-top: .1rem; }
-		.love-img-category .love-category-list .love-category-item img {
-		        max-width: 66%;
-		        margin-bottom: .05rem; }
+		.love-img-category .love-category-list .love-category-item  a img {
+		      width: 1rem;
+		      margin-bottom: .05rem; }
 	    .love-img-category .love-category-list .love-category-item .love-category-name {
 		        color: #333;
 		        font-size: .1rem;
