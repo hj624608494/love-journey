@@ -354,72 +354,77 @@
             </div>
         </div>
         <style>
-        .love-coupon{
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            width: 100%;
-            height: 100%;
-            display: -webkit-box;
-            -webkit-box-align: center;
-            -webkit-box-pack: center;
-            display: none;
-        }
-        .love-coupon .love-coupon-concessions{
-            background: #ffffff;
-            width: 90%;
-            border-radius: .05rem;
-        }
-        .love-coupon .love-coupon-concessions h1{
-            text-align: center;
-            color: #f95578;
-            font-size: .13rem;
-            line-height: .3rem;
-            border-bottom: .01rem solid #e1e1e1;
-        }
-        .love-coupon .love-coupon-concessions ul li{
-            border-bottom: .01rem solid #e1e1e1;
-            padding: 0 .1rem;
-        }
-        .love-coupon .love-coupon-concessions ul li span{
-            color: #5E5E5E;
-            line-height: .3rem;
-            font-size: .1rem;
-        }
-        .love-coupon .love-coupon-concessions ul li a{
-            display: inline-block;
-            width: .5rem;
-            height: .2rem;
-            border:.01rem solid #FF5777;
-            float: right;
-            line-height: .2rem;
-            margin-top: .07rem;
-            text-align: center;
-            color: #f95578;
-            border-radius: .03rem;
-            font-size: .1rem;
-        }
-        .love-coupon .love-coupon-concessions .love-coupon-ok{
-            
-            padding: .1rem 0;
-            text-align: center;
-        }
-        .love-coupon .love-coupon-concessions .love-coupon-ok span{
-            display: inline-block;
-            /*text-decoration: none;
-            vertical-align: middle;
-            white-space: nowrap;*/
-            border: none;
-            width: 1.1rem;
-            height: .3rem;
-            line-height: .3rem;
-            color: #ffffff;
-            border-radius: .02rem;
-            font-size: .13rem;
-            text-align: center;
-            background: #f95578;
-        }
+            .love-coupon{
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                display: -webkit-box;
+                -webkit-box-align: center;
+                -webkit-box-pack: center;
+                opacity: 0;
+                transition: opacity .3s ease-out;
+                -webkit-transition: opacity .3s ease-out;
+                -moz-transition: opacity .3s ease-out;
+                -ms-transition: opacity .3s ease-out;
+                /*display: none;*/
+            }
+            .love-coupon .love-coupon-concessions{
+                background: #ffffff;
+                width: 90%;
+                border-radius: .05rem;
+            }
+            .love-coupon .love-coupon-concessions h1{
+                text-align: center;
+                color: #f95578;
+                font-size: .13rem;
+                line-height: .3rem;
+                border-bottom: .01rem solid #e1e1e1;
+            }
+            .love-coupon .love-coupon-concessions ul li{
+                border-bottom: .01rem solid #e1e1e1;
+                padding: 0 .1rem;
+            }
+            .love-coupon .love-coupon-concessions ul li span{
+                color: #5E5E5E;
+                line-height: .3rem;
+                font-size: .1rem;
+            }
+            .love-coupon .love-coupon-concessions ul li a{
+                display: inline-block;
+                width: .5rem;
+                height: .2rem;
+                border:.01rem solid #FF5777;
+                float: right;
+                line-height: .2rem;
+                margin-top: .07rem;
+                text-align: center;
+                color: #f95578;
+                border-radius: .03rem;
+                font-size: .1rem;
+            }
+            .love-coupon .love-coupon-concessions .love-coupon-ok{
+                
+                padding: .1rem 0;
+                text-align: center;
+            }
+            .love-coupon .love-coupon-concessions .love-coupon-ok span{
+                display: inline-block;
+                /*text-decoration: none;
+                vertical-align: middle;
+                white-space: nowrap;*/
+                border: none;
+                width: 1.1rem;
+                height: .3rem;
+                line-height: .3rem;
+                color: #ffffff;
+                border-radius: .02rem;
+                font-size: .13rem;
+                text-align: center;
+                background: #f95578;
+            }
         </style>
 
         <!-- 弹出优惠券 -->
@@ -447,18 +452,21 @@
             </div>
 
         <style>
-        .love-mask{
-            display:none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1001
-            ;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 100;
-        }
+            .love-mask{
+                /*display:none;*/
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.6);
+                z-index: -1;
+                opacity: 0;
+                transition: opacity .3s ease-out;
+                -webkit-transition: opacity .3s ease-out;
+                -moz-transition: opacity .3s ease-out;
+                -ms-transition: opacity .3s ease-out;
+            }
         </style>
         <!-- mask -->
         <div class="love-mask" id="J_mask"></div>
@@ -518,7 +526,7 @@
             }
         </style>
         <!-- 累计评价 -->
-        <div class="love-appraise">
+        <!-- <div class="love-appraise">
             <div class="love-appraise-total" id="J-appraise-total">
                 <span class="appraise-total-count">
                     <a href="javascript:;">累计评价 17</a>
@@ -534,82 +542,81 @@
                 <div class="love-appraise-item1">1</div>
                 <div class="love-appraise-item">2</div>
             </div>
-        </div>
+        </div> -->
         
         <!--  -->
-        <div class="mbanner-top"></div>
+        <!-- <div class="mbanner-top"></div> -->
         <style type="text/css">
-        /*love-collect*/
-        .love-collect{
-            width:100%;
-            height: 0.8rem;
-            background: #ffffff;
-            border-bottom: .01rem solid #E0E0E0;
-        }
-        .love-collect .love-collect-marked{
-            width: 100%;
-            padding:.1rem 0;
-            background: #ffffff;
-            padding-bottom: .1rem;
-        }
+            /*love-collect*/
+            .love-collect{
+                width:100%;
+                height: 0.8rem;
+                background: #ffffff;
+                border-bottom: .01rem solid #E0E0E0;
+            }
+            .love-collect .love-collect-marked{
+                width: 100%;
+                padding:.1rem 0;
+                background: #ffffff;
+                padding-bottom: .1rem;
+            }
 
-        .love-collect .love-collect-shop{
-            float: left;
-            padding:0 .1rem;
-        }
-        .love-collect .love-collect-shop a img{
-            width: .4rem;
-            height: .4rem;
-            border: .01rem solid #E0E0E0;
-        }
-        .love-collect .love-collect-evaluate{
-    
-            float: left;
-        }
-        .love-collect .love-collect-evaluate .collect-evaluate-name{
-            font-size: .12rem;
-        }
-        .love-collect .love-collect-evaluate .collect-evaluate-num{
-            padding-top: .2rem;
-            font-size: .08rem;
-            color: #B3B3B3;
-        }
-        .love-collect .love-collect-evaluate .collect-evaluate-num .evaluate-num{
-            padding-right: .05rem;
-        }
-        .love-collect .love-collect-collect{
-            padding-right: .2rem;
-        }
-        .love-collect .love-collect-collect .love-collect-favorites {
-            float: right;
-            width: .5rem;
-            height: .2rem;
-            border: .01rem solid #000000;
-            border-radius: 0.04rem;
-            margin-top: .05rem;
-        }
-        .love-collect .love-collect-collect .love-collect-favorites span{
-            line-height: .2rem;
-            font-size: .12rem;
-        }
-        .love-collect .love-collect-sati ul li{
-            display: block;
-            float: left;
-            width: 33%;
-            padding: 0 .05rem;
-        }
-        .love-collect .love-collect-sati ul li span{
-            font-size: .09rem;
-        }
-        .love-collect .love-collect-sati ul li em{
-            color:#F1403C;
-            font-size: .09rem;
-        }
-        .love-collect .love-collect-sati ul li i{
-            font-size: .09rem;
-            color: #ffffff;
-            background:#F1403C;
-        }
+            .love-collect .love-collect-shop{
+                float: left;
+                padding:0 .1rem;
+            }
+            .love-collect .love-collect-shop a img{
+                width: .4rem;
+                height: .4rem;
+                border: .01rem solid #E0E0E0;
+            }
+            .love-collect .love-collect-evaluate{
+        
+                float: left;
+            }
+            .love-collect .love-collect-evaluate .collect-evaluate-name{
+                font-size: .12rem;
+            }
+            .love-collect .love-collect-evaluate .collect-evaluate-num{
+                padding-top: .2rem;
+                font-size: .08rem;
+                color: #B3B3B3;
+            }
+            .love-collect .love-collect-evaluate .collect-evaluate-num .evaluate-num{
+                padding-right: .05rem;
+            }
+            .love-collect .love-collect-collect{
+                padding-right: .2rem;
+            }
+            .love-collect .love-collect-collect .love-collect-favorites {
+                float: right;
+                width: .5rem;
+                height: .2rem;
+                line-height: .2rem;
+                text-align: center;
+                border: .01rem solid #000000;
+                border-radius: 0.04rem;
+                margin-top: .05rem;
+            }
+            
+            .love-collect .love-collect-sati ul li{
+                display: block;
+                float: left;
+                width: 33%;
+                padding: 0 .05rem;
+            }
+            .love-collect .love-collect-sati ul li span{
+                font-size: .09rem;
+            }
+            .love-collect .love-collect-sati ul li em{
+                color:#F1403C;
+                font-size: .09rem;
+            }
+            .love-collect .love-collect-sati ul li i{
+                font-size: .09rem;
+                color: #ffffff;
+                background:#F1403C;
+            }
 
         </style>
         
@@ -632,9 +639,7 @@
                 </div>
                 <div class="love-collect-collect">
                     <div class="love-collect-favorites">
-                        <span>
                             + 收藏
-                        </span>
                     </div>
                 </div>
             </div>
@@ -660,43 +665,39 @@
         </div>
         
         <style type="text/css">
-        /*love-pinkage*/
-        .love-pinkage{
-            width: 100%;
-            height: 1rem;
-            background: #ffffff;
-        }
-        .love-pinkage .love-pinkage-freight{
-            line-height:1rem; 
-            padding: 0 .1rem;
-        }
-        .love-pinkage .love-pinkage-freight{
-            float: left;
-        }
-        .love-pinkage .love-pinkage-freight .pinkage-freight{
-            border: .01rem solid #AFAFAF;
-            padding: .1rem;
-            font-size: .12rem;
-        }
-        .love-pinkage .love-pinkage-all{
-            float: right;
-            line-height: 1rem;
-            padding-right: .1rem;
-
-        }
-        .love-pinkage .love-pinkage-all .pinkage-all{
-            border: .01rem solid #AFAFAF;
-            padding: .1rem .2rem;
-            font-size: .12rem;
-        }
+            /*love-pinkage*/
+            .love-pinkage{
+                width: 100%;
+                height: 1rem;
+                background: #ffffff;
+            }
+            .love-pinkage .love-pinkage-freight,
+            .love-pinkage .love-pinkage-all {
+                margin-top: .3rem;
+                line-height:.3rem; 
+                width: 1rem;
+                height: .3rem;
+                border: 1px solid #AFAFAF;
+                text-align: center;
+                font-size: .1rem;
+            }
+            .love-pinkage .love-pinkage-freight{
+                float: left;
+               margin-left:.17rem;
+            }
+           
+            .love-pinkage .love-pinkage-all{
+                float: right;
+               margin-right:.17rem;
+            }
         </style>
         <!--  -->
         <div class="love-pinkage">
             <div class="love-pinkage-freight">
-                <span class="pinkage-freight">全部商品（197）</span>
+                全部商品(198)
             </div>
             <div class="love-pinkage-all">
-                <span class="pinkage-all">进入小店</span>
+                进入小店
             </div>
         </div>
         
@@ -704,43 +705,42 @@
         <div class="mbanner-top"></div>
         <style>
 
-        /*love-details*/
-        .love-details {
-            width: 100%;
-            background: #ffffff;
-            border-bottom: .01rem solid #E0E0E0;  
+            /*love-details*/
+            .love-details {
+                width: 100%;
+                background: #ffffff;
+                border-bottom: .01rem solid #E0E0E0;  
 
-        }
-        .love-details .love-details-title{
-            width: 100%;
-            position: relative;
-            text-align: center;
-            padding: .1rem 0rem;
-        }
-        .love-details .love-details-title a{
-            display: block;
-            float: left;
-            width: 33%;
-            height: .2rem;
-            text-align: center;
-        }
-        .love-details .love-details-title a span{
-            font-size: .15rem;
-            color: #000000;
-        }
-        .love-details  .love-details-title .details-title2{
-            border-left:.01rem solid #EAEAEA; 
-            border-right:.01rem solid #EAEAEA; 
+            }
+            .love-details .love-details-title{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                padding: .1rem 0rem;
+            }
+            .love-details .love-details-title a{
+                display: block;
+                float: left;
+                width: 33%;
+                text-align: center;
+            }
+            .love-details .love-details-title a span{
+                font-size: .1rem;
+                color: #000000;
+            }
+            .love-details  .love-details-title .details-title2{
+                border-left:.01rem solid #EAEAEA; 
+                border-right:.01rem solid #EAEAEA; 
 
-        }
-        .love-details .love-details-line{
-            position: absolute;
-            top:.4rem;
-            left: 0rem;
-            background: red;
-            width: 33%;
-            height: .01rem;
-        }
+            }
+            .love-details .love-details-line{
+                position: absolute;
+                top:.3rem;
+                left: 0rem;
+                background: red;
+                width: 33%;
+                height: .01rem;
+            }
        
       </style>
 
@@ -761,148 +761,148 @@
                 </div>
         </div>
         <style>
-      /**/
-        .love-details-all{
-            background: #ffffff;
-            width:100%;
-            height: auto;
-        }
-        .love-details-all .details-all{
-            padding:.2rem 0;
-        }
-        .love-details-all ul li{
-            display: none;
-        }
-        .love-details-all ul li .details-all-explain{
-            width: 100%;
-            height: 1.6rem;
-            padding: 0 .1rem;
-        }
+            /**/
+            .love-details-all{
+                background: #ffffff;
+                width:100%;
+                height: auto;
+            }
+            .love-details-all .details-all{
+                padding:.2rem 0;
+            }
+            .love-details-all ul li{
+                display: none;
+            }
+            .love-details-all ul li .details-all-explain{
+                width: 100%;
+                height: 1.6rem;
+                padding: 0 .1rem;
+            }
 
-        .love-details-all ul li .details-all-explain .explain-start{
-            display: inline-block;
-            width: .5rem;
-            height: .01rem;
-            background:#AFAFAF;
-            float: left;
-        }
-        .love-details-all ul li .details-all-explain .explain-text{
-            display: inline-block;
-            float: left;
-            padding: 0.1rem 0px;
-            color: rgb(114, 114, 114);
-            font-size: 0.115rem;
-        }
-        .love-details-all ul li .details-all-explain .explain-end{
-            display: inline-block;
-            width: .5rem;
-            height: .01rem;
-            background:#AFAFAF;
-            float: right;
-        }
-        .love-details-all ul li .details-all-dress{
-            width: 100%;
-           
-        }
-        .love-details-all ul li .details-all-dress p{
-            padding: .1rem .1rem;
-            color:rgb(114, 114, 114); 
-            font-size: .12rem;
-        }
-        .love-details-all ul li .details-all-dress .details-all-img img{
-            width: 100%;
+            .love-details-all ul li .details-all-explain .explain-start{
+                display: inline-block;
+                width: .5rem;
+                height: .01rem;
+                background:#AFAFAF;
+                float: left;
+            }
+            .love-details-all ul li .details-all-explain .explain-text{
+                display: inline-block;
+                float: left;
+                padding: 0.2rem 0px;
+                color: rgb(114, 114, 114);
+                font-size: .1rem;
+            }
+            .love-details-all ul li .details-all-explain .explain-end{
+                display: inline-block;
+                width: .5rem;
+                height: .01rem;
+                background:#AFAFAF;
+                float: right;
+            }
+            .love-details-all ul li .details-all-dress{
+                width: 100%;
+               
+            }
+            .love-details-all ul li .details-all-dress p{
+                padding: .1rem .1rem;
+                color:rgb(114, 114, 114); 
+                font-size: .12rem;
+            }
+            .love-details-all ul li .details-all-dress .details-all-img img{
+                width: 100%;
 
-        }
-        /*产品参数*/
-        .love-details-all .details-all-parameter{
-            margin-bottom: .4rem;
-        }
-        .love-details-all .details-all-parameter .item{
-            padding: 0 .1rem;
-            display: block;
-        }
-        .love-details-all .details-all-parameter .item table{
-            width: 100%;
-            border-collapse: collapse;
-            border-spacing: 0;
-           
-        }
-        .love-details-all .details-all-parameter .item table tbody tr{
-            display:table-row;
-            vertical-align: inherit;
-            border-color: inherit;
-            border-bottom: .01rem solid #EAEAEA;
-           
-        }
-        .love-details-all .details-all-parameter .item table tbody tr td{
-            display:table-cell;
-            vertical-align: inherit;
-            font-weight: 400;
-            line-height: .23rem;
-            text-align: left;
-            color: #727272;
-            width: 33%;
-            font-size: .1rem;
-        }
-        .love-details-all .details-all-parameter .item td:first-child{
-            width: 33%;
-        }
-        .love-details-all .details-all-parameter .param-list{
-            padding: 0 .1rem;
-            clear: both;
+            }
+            /*产品参数*/
+            .love-details-all .details-all-parameter{
+                margin-bottom: .4rem;
+            }
+            .love-details-all .details-all-parameter .item{
+                padding: 0 .1rem;
+                display: block;
+            }
+            .love-details-all .details-all-parameter .item table{
+                width: 100%;
+                border-collapse: collapse;
+                border-spacing: 0;
+               
+            }
+            .love-details-all .details-all-parameter .item table tbody tr{
+                display:table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                border-bottom: .01rem solid #EAEAEA;
+               
+            }
+            .love-details-all .details-all-parameter .item table tbody tr td{
+                display:table-cell;
+                vertical-align: inherit;
+                font-weight: 400;
+                line-height: .23rem;
+                text-align: left;
+                color: #727272;
+                width: 33%;
+                font-size: .1rem;
+            }
+            .love-details-all .details-all-parameter .item td:first-child{
+                width: 33%;
+            }
+            .love-details-all .details-all-parameter .param-list{
+                padding: 0 .1rem;
+                clear: both;
 
-        }
-        .love-details-all .details-all-parameter .param-list div{
-            border-bottom: .01rem solid #EAEAEA;
-            height: .23rem;
+            }
+            .love-details-all .details-all-parameter .param-list div{
+                border-bottom: .01rem solid #EAEAEA;
+                height: .23rem;
 
-        }
+            }
 
-        .love-details-all .details-all-parameter .param-list div span{
-            display: inline-block;
-            line-height: .23rem;
-            font-size: .1rem;
-            color: #727272; 
+            .love-details-all .details-all-parameter .param-list div span{
+                display: inline-block;
+                line-height: .23rem;
+                font-size: .1rem;
+                color: #727272; 
 
-        }
-        .love-details-all .details-all-parameter .param-list div .param-list-other{
-            color: #EB4B6A;
-            width: 1rem;
-            margin-left: .15rem;
-        }
-        .love-details-all .details-all-parameter .param-list div .param-list-specific{
-            width: .5rem;
-        }
-        /*热门推荐*/
-        .love-details-all .details-all .details-all-hot{
-            padding: 0 .1rem;
-            width: 100%;
-            height: auto;
-            margin-bottom: .4rem;
+            }
+            .love-details-all .details-all-parameter .param-list div .param-list-other{
+                color: #EB4B6A;
+                width: 1rem;
+                margin-left: .15rem;
+            }
+            .love-details-all .details-all-parameter .param-list div .param-list-specific{
+                width: .5rem;
+            }
+            /*热门推荐*/
+            .love-details-all .details-all .details-all-hot{
+                padding: 0 .1rem;
+                width: 100%;
+                height: auto;
+                margin-bottom: .4rem;
 
-        }
-        .love-details-all .details-all .details-all-hot .all-hot-img{
-            height: 1.3rem;
-            width: .7rem;
-            overflow: hidden;
-            float: left;
-            margin-left: .05rem;
-        }
-        .love-details-all .details-all .details-all-hot .all-hot-img a img{
-            height: 1rem;
-            overflow: hidden;
-        }
-        .love-details-all .details-all .details-all-hot .all-hot-img p {
-            color: #727272;
-            font-size: .09rem;
-        }
-        .love-details-all .details-all .details-all-hot .all-hot-img span{
-            color: #727272;
-            font-size: .09rem;
-        }
-        .love-details-all .details-all .details-all-hot .all-hot-img .hot-img-price{
-            margin-right: .05rem;
-        }
+            }
+            .love-details-all .details-all .details-all-hot .all-hot-img{
+                height: 1.3rem;
+                width: .7rem;
+                overflow: hidden;
+                float: left;
+                margin-left: .05rem;
+            }
+            .love-details-all .details-all .details-all-hot .all-hot-img a img{
+                height: 1rem;
+                overflow: hidden;
+            }
+            .love-details-all .details-all .details-all-hot .all-hot-img p {
+                color: #727272;
+                font-size: .09rem;
+            }
+            .love-details-all .details-all .details-all-hot .all-hot-img span{
+                color: #727272;
+                font-size: .09rem;
+            }
+            .love-details-all .details-all .details-all-hot .all-hot-img .hot-img-price{
+                margin-right: .05rem;
+            }
 
       </style>
         
@@ -1122,86 +1122,86 @@
         </div>
         
         <style>
-        .love-foot-bottom{
-            width: 100%;
-            height: .35rem;
-            background: #ffffff;
-            /*border-top:.01rem solid  #AFAFAF;*/
-            position: fixed;
-            bottom: 0;
-            z-index: 100;
-            max-width: 750px;
-            background-color: rgba(255, 255, 255, 0.8);
-        }
+            .love-foot-bottom{
+                width: 100%;
+                height: .35rem;
+                background: #ffffff;
+                /*border-top:.01rem solid  #AFAFAF;*/
+                position: fixed;
+                bottom: 0;
+                z-index: 100;
+                max-width: 750px;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
 
-        .love-foot-bottom .foot-bottom{
-            height: .35rem;
-        }
-        .love-foot-talk , .love-foot-like ,.love-foot-shopcar{
-            display: inline-block;
-            height: .3rem;
-            vertical-align: middle;
-            float: left;
+            .love-foot-bottom .foot-bottom{
+                height: .35rem;
+            }
+            .love-foot-talk , .love-foot-like ,.love-foot-shopcar{
+                display: inline-block;
+                height: .3rem;
+                vertical-align: middle;
+                float: left;
 
-        }
-        .love-foot-bottom .foot-bottom .love-foot-talk,.love-foot-like{
-            width: .45rem;
-            height: .3rem;
-            line-height:.3rem;
-            text-align: center;
-        } 
-        .love-foot-bottom .foot-bottom .love-foot-talk span{
-            display:block;
-            font-size: .15rem;
-            color:rgb(114, 114, 114);  
-        }
-        .love-foot-bottom .foot-bottom .love-foot-like span{
-            display:block;
-            font-size: .19rem;
-            color:rgb(114, 114, 114);
-            border-left: .01rem solid #AFAFAF; 
-        }
+            }
+            .love-foot-bottom .foot-bottom .love-foot-talk,.love-foot-like{
+                width: .45rem;
+                height: .3rem;
+                line-height:.3rem;
+                text-align: center;
+            } 
+            .love-foot-bottom .foot-bottom .love-foot-talk span{
+                display:block;
+                font-size: .15rem;
+                color:rgb(114, 114, 114);  
+            }
+            .love-foot-bottom .foot-bottom .love-foot-like span{
+                display:block;
+                font-size: .19rem;
+                color:rgb(114, 114, 114);
+                border-left: .01rem solid #AFAFAF; 
+            }
 
-        .love-foot-bottom .foot-bottom .love-foot-talk .foot-talk{
-            font-size: .09rem;
-            margin-top: -.18rem;
-        }
-        .love-foot-bottom .foot-bottom .love-foot-like .foot-like{
-            font-size: .09rem;
-            margin-top: -.18rem;
-        }
-        .love-foot-bottom .foot-bottom .love-foot-shopcar{
-            padding-right: .1rem;
-            float: right;
-            margin-top:.05rem;
-        }
-        .love-foot-bottom .foot-bottom .love-foot-shopcar span{
-            border: .01rem solid red;
-           
-        } 
-        .love-foot-bottom .foot-bottom .love-foot-shopcar .foot-shopcar{
-            display: inline-block;
-            color: red;
-            float: left;
-            width: .7rem;
-            height: .25rem;
-            text-align: center;
-            line-height: .25rem;
-            font-size: .1rem;
+            .love-foot-bottom .foot-bottom .love-foot-talk .foot-talk{
+                font-size: .09rem;
+                margin-top: -.18rem;
+            }
+            .love-foot-bottom .foot-bottom .love-foot-like .foot-like{
+                font-size: .09rem;
+                margin-top: -.18rem;
+            }
+            .love-foot-bottom .foot-bottom .love-foot-shopcar{
+                padding-right: .1rem;
+                float: right;
+                margin-top:.05rem;
+            }
+            .love-foot-bottom .foot-bottom .love-foot-shopcar span{
+                border: .01rem solid red;
+               
+            } 
+            .love-foot-bottom .foot-bottom .love-foot-shopcar .foot-shopcar{
+                display: inline-block;
+                color: red;
+                float: left;
+                width: .7rem;
+                height: .25rem;
+                text-align: center;
+                line-height: .25rem;
+                font-size: .1rem;
 
-        }
-        .love-foot-bottom .foot-bottom .love-foot-shopcar .foot-shopping{
-            margin-left: .1rem;
-            display: inline-block;
-            width: .7rem;
-            height: .25rem;
-            line-height: .25rem;
-            text-align: center;
-            float: right;
-            background: red;
-            color: #ffffff;
-            font-size: .1rem;
-        }
+            }
+            .love-foot-bottom .foot-bottom .love-foot-shopcar .foot-shopping{
+                margin-left: .1rem;
+                display: inline-block;
+                width: .7rem;
+                height: .25rem;
+                line-height: .25rem;
+                text-align: center;
+                float: right;
+                background: red;
+                color: #ffffff;
+                font-size: .1rem;
+            }
         </style>
         <!--  -->
         <div class="love-foot-bottom">
@@ -1298,13 +1298,18 @@
         var oCouponok = document.getElementById('J-coupon-ok');
 
             oDownloadmore.onclick=function(){
-                oLovecoupon.style.display="block"
-                oLovecoupon.style.display="-webkit-box;"
-                oMask.style.display="block"
+                oLovecoupon.style.zIndex="1000";
+                oLovecoupon.style.opacity="1";
+                // oLovecoupon.style.display="-webkit-box;"
+                // oMask.style.display="block"
+                oMask.style.zIndex="100";
+                oMask.style.opacity="1";
             }
             oCouponok.onclick=function(){
-                 oLovecoupon.style.display="none"
-                oMask.style.display="none"
+                oLovecoupon.style.zIndex="-1";
+                oLovecoupon.style.opacity="0";
+                oMask.style.zIndex="-1";
+                oMask.style.opacity="0";
             }
         
     }

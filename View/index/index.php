@@ -407,7 +407,7 @@
              */
             function countDown(){
                 // var a = +new Date('2016-01-16 16:59:11');
-                var a = '1453109551000';
+                var a = '1483949141293';
 
                 setInterval(function(){
                     var o = {};
