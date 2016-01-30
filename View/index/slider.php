@@ -62,12 +62,15 @@
 
         .clearfix {
           zoom: 1; }
-        html,
-        body {
-            overflow: hidden;
-        }
-        /**/
 
+        /**
+         * variable
+         */
+        /*font color*/
+        /**
+         * page index 
+         * author: hj;
+         */
         .love-container {
             max-width: 750px;
             min-width: 320px;
@@ -75,6 +78,7 @@
             margin-right: auto; 
         }
         
+
     </style>
     <!-- According to the screen automatically set the font size -->
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
@@ -187,8 +191,8 @@
         <!-- 周星榜 -->
         <style>
             .lover-weekstar{
-                width: 100%;
-                height: auto;
+                /*width: 100%;
+                height: auto;*/
                 margin-top: .1rem;
                 position: relative;
             } 
@@ -277,10 +281,10 @@
                 height: .21rem;
                 padding: .05rem .1rem;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                /*text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
+                -webkit-box-orient: vertical;*/
             }
             .weekstar-swiper .weekstar-swiper-img .weekstar-swiper-star .star-care{
                 width: .45rem;
@@ -311,7 +315,7 @@
             <div class="lover-weekstar-weekby">
                 <img src="../../Public/dist/images/love-weekstar1.webp">
             </div>
-            <!--  -->
+           
             <div class="lover-weekstar-swiper ">
                 <div class="weekstar-swiper-title">
                     <div class="swiper-title">
@@ -323,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <!--  -->
+             
                 <div class="weekstar-swiper clearfix">
                     <div class="weekstar-swiper-img">
                         <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
@@ -335,14 +339,14 @@
                         </div>
                     </div>
 
-                    <div class="weekstar-swiper-img">
+                    <!-- div class="weekstar-swiper-img">
                         <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
                         <div class="weekstar-swiper-star">
                             <p class="star-title">白_线_流</p>
                             <p class="star-icon">满满灵气的娇俏少女感，看到她就想起校园时最单纯少女时代</p>
                             <div class="star-care">+关注</div>
                             <div class="star-know">了解他</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -352,7 +356,18 @@
         <!--  今日红人上新 -->
         <style>
             .love-newer{
-                height: 1rem;
+                width: 100%;
+                height: .5rem;
+
+            }
+            .love-newer p{
+                padding: 0 .1rem;
+                font-size: .1rem;
+                line-height: .5rem;
+                color:#7D7D7D;
+                font-weight: 800; 
+
+
             }
         </style>
         <div class="love-newer">
