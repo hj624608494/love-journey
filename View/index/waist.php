@@ -460,10 +460,10 @@
                 <div class="title-choose">买家精选</div>
             </div>
             <div class="love-title-list clearfix" id="J-love-title-list">
-                <a class="title-list3" id="J-title-list3" >全部</a>
-                <a class="title-list1">棉衣</a>
-                <a class="title-list2">毛呢外套</a>
-                <a>羽绒服</a>
+                <a href="" class="title-list3" id="J-title-list3" >全部</a>
+                <a href="" class="title-list1">棉衣</a>
+                <a href="" class="title-list2">毛呢外套</a>
+                <a href="">羽绒服</a>
             </div>
         </div>
         <!-- 瀑布流 -->
