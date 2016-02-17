@@ -389,14 +389,14 @@
                     $('#J_mask').css('display', 'block');
                     $('#J_leftMenuBox').css({'visibility': 'visible', 'left': 2+'rem'});
                     //阻止页面滚动
-                    util.switchPageScroll(true);
+                    // util.switchPageScroll(true);
                 })
                 //隐藏
                 $('#J_mask, #J_leftMenuBox').click(function(){
                     $('#J_mask').css('display', 'none');
                     $('#J_leftMenuBox').css({'visibility': 'hidden', 'left': -2+'rem'});
                     //开启页面滚动
-                    util.switchPageScroll(false);
+                    // util.switchPageScroll(false);
                 })
             }
             leftMenun();
