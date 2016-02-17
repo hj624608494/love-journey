@@ -195,10 +195,9 @@
         <!-- 周星榜 -->
         <style>
             .lover-weekstar{
-                /*width: 100%;
-                height: auto;*/
                 margin-top: .1rem;
                 position: relative;
+                overflow: hidden;
             } 
             .lover-weekstar .lover-weekstar-weekby{
                 width: 100%;
@@ -245,22 +244,20 @@
             }
             /**/
             .weekstar-swiper{
-                width: 100%;
-                height: auto;
                 position: absolute;
                 top:-.45rem;
                 left: .8rem;
+                width: 100%;
+                display: flex;
             }
 
             .weekstar-swiper .weekstar-swiper-img{
                 width: 1.2rem;
                 position: relative;
                 margin-right: .1rem;
-                display: block;
                 float: left;
             }
             .weekstar-swiper .weekstar-swiper-img a img{
-                width: 100%;
                 height: 1.7rem;
             }
             .weekstar-swiper .weekstar-swiper-img .weekstar-swiper-star{
@@ -331,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-             
+            
                 <div class="weekstar-swiper clearfix">
                     <div class="weekstar-swiper-img">
                         <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
@@ -343,18 +340,49 @@
                         </div>
                     </div>
 
-                    <!-- <div class="weekstar-swiper-img">
+                    <div class="weekstar-swiper-img">
                         <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
                         <div class="weekstar-swiper-star">
                             <p class="star-title">白_线_流</p>
                             <p class="star-icon">满满灵气的娇俏少女感，看到她就想起校园时最单纯少女时代</p>
                             <div class="star-care">+关注</div>
                             <div class="star-know">了解他</div>
-                        </div>-->
+                        </div>
+                    </div>
+
+                    <div class="weekstar-swiper-img">
+                        <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
+                        <div class="weekstar-swiper-star">
+                            <p class="star-title">白_线_流</p>
+                            <p class="star-icon">满满灵气的娇俏少女感，看到她就想起校园时最单纯少女时代</p>
+                            <div class="star-care">+关注</div>
+                            <div class="star-know">了解他</div>
+                        </div>
+                    </div>
+
+                    <div class="weekstar-swiper-img">
+                        <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
+                        <div class="weekstar-swiper-star">
+                            <p class="star-title">白_线_流</p>
+                            <p class="star-icon">满满灵气的娇俏少女感，看到她就想起校园时最单纯少女时代</p>
+                            <div class="star-care">+关注</div>
+                            <div class="star-know">了解他</div>
+                        </div>
+                    </div>
+
+                    <div class="weekstar-swiper-img">
+                        <a href="javascript:;"><img src="../../Public/dist/images/love-weekstar2.jpg"></a>
+                        <div class="weekstar-swiper-star">
+                            <p class="star-title">白_线_流</p>
+                            <p class="star-icon">满满灵气的娇俏少女感，看到她就想起校园时最单纯少女时代</p>
+                            <div class="star-care">+关注</div>
+                            <div class="star-know">了解他</div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-            </div> 
+        </div> 
         
 
         <!--  今日红人上新 -->
@@ -365,6 +393,7 @@
                 background: #ffffff;
                 padding-bottom: .1rem;
                 width: 100%;
+                overflow: hidden;
 
 
             }
@@ -377,12 +406,20 @@
             }
             .love-rednewper .love-red{
                 width: 100%;
-                height: 1.9rem;
+                display: flex;
+                margin: 0px auto;
+                transform: translate3d(-1.63rem, 0, 0);
+                -webkit-transform: translate3d(-1.63rem, 0, 0);
+                -moz-transform: translate3d(-1.63rem, 0, 0);
+                -ms-transform: translate3d(-1.63rem, 0, 0);
+                -o-transform: translate3d(-1.63rem, 0, 0);
+                /*margin-left: -1.63rem;*/
             }
             .love-rednewper .love-rednewper-img{
+                float: left;
                 width: 1.85rem;
                 height: 1.9rem;
-                margin: 0px auto;
+                margin-right: .1rem;
                 border: 1px solid rgb(206, 206, 206);
                 border-radius: 0.05rem;
             }         
@@ -441,7 +478,7 @@
 
         <div class="love-rednewper clearfix">
             <p class="love-newer">今日红人上新</p>
-            <div class="love-red">
+            <div class="love-red" id="J_love_red">
                 <div class="love-rednewper-img">
                     <div class="rednewper-img">
                         <a href="javascript:;" class="rednewper-img-first"><img src="../../Public/dist/images/love-red1.webp" style="border-radius: 0.05rem 0 0 0;"></a>
@@ -458,6 +495,103 @@
                             <span>粉丝 9067</span>
                         </div>
                     </div>
+
+                </div>
+
+                 <div class="love-rednewper-img">
+                        <div class="rednewper-img">
+                            <a href="javascript:;" class="rednewper-img-first"><img src="../../Public/dist/images/love-red1.webp" style="border-radius: 0.05rem 0 0 0;"></a>
+                            <a href="javascript:;"><img src="../../Public/dist/images/love-red2.webp" style="border-radius:  0 0.05rem 0 0;"></a>
+                        </div>
+                        <div class="rednewper-title clearfix">
+                            <p> “韩系学院派软妹，乖巧装扮亲和力爆棚” </p>
+                            <div class="rednewper-name">
+                                <span>汤静文</span>
+                            </div>
+                            <div class="rednewper-sale">
+                                <span>销量 306</span>
+                                <span>｜</span>
+                                <span>粉丝 9067</span>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                 <div class="love-rednewper-img">
+                        <div class="rednewper-img">
+                            <a href="javascript:;" class="rednewper-img-first"><img src="../../Public/dist/images/love-red1.webp" style="border-radius: 0.05rem 0 0 0;"></a>
+                            <a href="javascript:;"><img src="../../Public/dist/images/love-red2.webp" style="border-radius:  0 0.05rem 0 0;"></a>
+                        </div>
+                        <div class="rednewper-title clearfix">
+                            <p> “韩系学院派软妹，乖巧装扮亲和力爆棚” </p>
+                            <div class="rednewper-name">
+                                <span>汤静文</span>
+                            </div>
+                            <div class="rednewper-sale">
+                                <span>销量 306</span>
+                                <span>｜</span>
+                                <span>粉丝 9067</span>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                <div class="love-rednewper-img">
+                        <div class="rednewper-img">
+                            <a href="javascript:;" class="rednewper-img-first"><img src="../../Public/dist/images/love-red1.webp" style="border-radius: 0.05rem 0 0 0;"></a>
+                            <a href="javascript:;"><img src="../../Public/dist/images/love-red2.webp" style="border-radius:  0 0.05rem 0 0;"></a>
+                        </div>
+                        <div class="rednewper-title clearfix">
+                            <p> “韩系学院派软妹，乖巧装扮亲和力爆棚” </p>
+                            <div class="rednewper-name">
+                                <span>汤静文</span>
+                            </div>
+                            <div class="rednewper-sale">
+                                <span>销量 306</span>
+                                <span>｜</span>
+                                <span>粉丝 9067</span>
+                            </div>
+                        </div>
+                    
+                </div>
+
+
+                <div class="love-rednewper-img">
+                        <div class="rednewper-img">
+                            <a href="javascript:;" class="rednewper-img-first"><img src="../../Public/dist/images/love-red1.webp" style="border-radius: 0.05rem 0 0 0;"></a>
+                            <a href="javascript:;"><img src="../../Public/dist/images/love-red2.webp" style="border-radius:  0 0.05rem 0 0;"></a>
+                        </div>
+                        <div class="rednewper-title clearfix">
+                            <p> “韩系学院派软妹，乖巧装扮亲和力爆棚” </p>
+                            <div class="rednewper-name">
+                                <span>汤静文</span>
+                            </div>
+                            <div class="rednewper-sale">
+                                <span>销量 306</span>
+                                <span>｜</span>
+                                <span>粉丝 9067</span>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                <div class="love-rednewper-img">
+                        <div class="rednewper-img">
+                            <a href="javascript:;" class="rednewper-img-first"><img src="../../Public/dist/images/love-red1.webp" style="border-radius: 0.05rem 0 0 0;"></a>
+                            <a href="javascript:;"><img src="../../Public/dist/images/love-red2.webp" style="border-radius:  0 0.05rem 0 0;"></a>
+                        </div>
+                        <div class="rednewper-title clearfix">
+                            <p> “韩系学院派软妹，乖巧装扮亲和力爆棚” </p>
+                            <div class="rednewper-name">
+                                <span>汤静文</span>
+                            </div>
+                            <div class="rednewper-sale">
+                                <span>销量 306</span>
+                                <span>｜</span>
+                                <span>粉丝 9067</span>
+                            </div>
+                        </div>
+                    
                 </div>
             </div>
         </div>
@@ -547,6 +681,7 @@
         <div class="love-newer clearfix">
                 <p class="love-newer-title">风格红人</p>
                 <div class="love-newer-box" id="J_newerBox">
+
                     <div class="love-newer-img clearfix">
                             <a href="javascript:;">
                                 <div class="love-newer-img1">
@@ -1695,6 +1830,7 @@
     <!-- swiper-tiny -->
     <link rel="stylesheet" href="../../Public/dist/plugins/swiper-tiny/swiper.css">
     <script src="../../Public/dist/plugins/swiper-tiny/swiper.js"></script>
+    <script src="http://touch.code.baidu.com/touch-0.2.14.min.js"></script>
     
     <script>
         $(function(){
@@ -1713,6 +1849,8 @@
             },3000)
         })
 
+
+        // 
         function rotateY(){
             var oNewerBox = document.getElementById('J_newerBox');
             var oLoveNewerImg = oNewerBox.getElementsByClassName('love-newer-img');
@@ -1738,6 +1876,34 @@
 
 
 
+        function touchEvent(){
+            touch.on('#J_love_red', 'touchstart', function(ev){
+                ev.preventDefault();
+            });
+
+            var target = document.getElementById("J_love_red");
+            target.style.webkitTransition = 'all ease 0.2s';
+            var oTranslate = -1.63;
+
+            touch.on(target, 'swiperight', function(ev){
+                oTranslate += 1.95;
+                target.style.webkitTransform = "translate3d(" + oTranslate + "rem,0,0)";
+                // alert('向右滑动');
+            });
+
+            touch.on(target, 'swipeleft', function(ev){
+                // alert('向左滑动');
+                oTranslate -= 1.95;
+                target.style.webkitTransform = "translate3d(" + oTranslate + "rem,0,0)";
+            });
+        }
+        touchEvent();
+
+    
+
+
+        //
+
         var aLovetitlelist = document.getElementById('J-love-title-list').getElementsByTagName('a');
         // var aLovetitlelistone = aLovetitlelist.getElementsByTagName('div');
         var aLoveimgs = document.getElementById('J-love-imgs').getElementsByClassName('J-love-li');
@@ -1753,21 +1919,7 @@
                 aLoveimgs[this.index].style.display='block';
             }
         }
-        // var aLovetitlelist = document.getElementById('J-love-title-list').getElementsByClassName('title-list');
-        // var aLoveimgs = document.getElementById('J-love-imgs').getElementsByClassName('J-love-li');
 
-        // for (var i = 0; i < aLovetitlelist.length; i++) {
-        //     aLovetitlelist[i].index =i;
-        //     aLovetitlelist[i].onclick = function(){
-        //         for (var i = 0; i < aLovetitlelist.length; i++) {
-        //             aLovetitlelist[i].className = ' ';
-        //             aLoveimgs[i].style.display = 'none';
-        //         };
-        //         this.className = "title-list3";
-        //         aLoveimgs[this.index].style.display='block';
-        //     }
-
-        // };
     </script>
 </body>
 </html>

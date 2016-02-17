@@ -440,6 +440,7 @@
                 font-size: .1rem;
                 padding: 0 .16rem;
                 line-height: .2rem;
+                color: #000000;
             }
             .love-title .love-title-list .title-list1{
                 border-left: 1px solid #e5e5e5;
@@ -460,10 +461,10 @@
                 <div class="title-choose">买家精选</div>
             </div>
             <div class="love-title-list clearfix" id="J-love-title-list">
-                <a href="" class="title-list3" id="J-title-list3" >全部</a>
-                <a href="" class="title-list1">棉衣</a>
-                <a href="" class="title-list2">毛呢外套</a>
-                <a href="">羽绒服</a>
+                <a href="javascript:;" class="title-list3" id="J-title-list3" >全部</a>
+                <a href="javascript:;" class="title-list1">棉衣</a>
+                <a href="javascript:;" class="title-list2">毛呢外套</a>
+                <a href="javascript:;">羽绒服</a>
             </div>
         </div>
         <!-- 瀑布流 -->

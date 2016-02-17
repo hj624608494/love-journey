@@ -27,6 +27,7 @@ window.util = function(){
 
             setTimeout(function(){
                 oHint.style.opacity = 0;
+                oHint.remove();
             },time ?  time : 2000);
         },
 

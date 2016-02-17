@@ -54,7 +54,7 @@
         <div class="love-mask" id="J_mask">  </div>
 
         <!-- 顶部登录 -->
-        <div class="love-top-login  clearfix">
+        <div class="love-top-login  clearfix J_topLogin">
             <div class="form-shunt">
                <img src="../../Public/dist/images/love-login-bg.jpg" width="100%">
                <div class="love-top-login-controller">
@@ -70,8 +70,8 @@
                      <a href="javascript:;"class="enter-back iconfont icon-fanhui" id="J-enter-back">返回</a>
                      <a href="javascript:;"class="enter-logon" id="J-enter-logon">注册</a>     
                  <div class="love-enter-controller">
-                     <input type="text" class="love-enter-account" id="J-btn-account" placeholder="昵称/邮箱/手机号"/>
-                     <input type="password" class="love-enter-download" id="J-enter-download" placeholder="密码"/>
+                     <input type="text" class="love-enter-account" id="J-login-username" placeholder="昵称/邮箱/手机号"/>
+                     <input type="password" class="love-enter-download" id="J-login-password" placeholder="密码"/>
                      <a href="javascript:;" class="love-enter-login" id="J-enter-login">登录</a>
                     <div class="enter-other-login">
                         <a href="" class="love-enter-iconqq"><img src="../../Public/dist/images/love-qq.png"></a>
@@ -432,6 +432,36 @@
                 //返回
                 $('#J-enter-back').click(function(){
                     $('#J-love-enter').css('display', 'none');
+                })
+
+                //登录操作；
+                $('#J-enter-login').click(function(){
+                    var oFormData = {
+                        'username': $('#J-login-username').val(),
+                        'password': $('#J-login-password').val(),
+                    };
+
+                    $.ajax({
+                        url: '/index.php/index/login',
+                        type: 'post',
+                        data: oFormData,
+                        success: function(result){
+                            var result = JSON.parse(result);
+                            if (result.ret == true) {
+                                util.alertHint('登录成功');
+                                $('.J_topLogin').hide();
+                                $('.love-feature-market').css('padding-top','.3rem');
+                                return;
+                            }else{
+                                util.alertHint('用户密码错误');
+                                return;
+                            }
+                        },
+                        error: function(xhr, type){
+                            util.alertHint('Ajax error!')
+                        }
+                    })
+
                 })
             }
             login();
