@@ -483,6 +483,9 @@ div {
   padding: .05rem 0;
   color: #757575; }
 
+.love-imgs .love-imgs-box ul li .imgs-box-title a {
+  color: #999; }
+
 .love-imgs .love-imgs-box ul li span {
   font-size: .07rem; }
 
