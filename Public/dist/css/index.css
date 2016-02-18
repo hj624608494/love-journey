@@ -127,7 +127,7 @@ div {
  */
 .love-left-menu {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -2rem;
   height: 100%;

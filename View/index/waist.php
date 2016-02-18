@@ -23,7 +23,7 @@
     <div class="love-container">
         <!-- header -->
     	<div class="love-header clearfix">
-            <span class="love-menu-icon iconfont icon-caidan" id="J_leftMenu"></span>
+            <a href="/index.php" class="love-menu-icon iconfont icon-zhuye" id="J_leftMenu"></a>
 
             <div class="love-header-search clearfix">
                 上衣
@@ -45,7 +45,7 @@
         <!--限时抢购 --> 
         <div class="love-flashsale">
         	<div class="love-flashsale-img">
-        		<a href="javascript:;"><img src="../../Public/dist/images/love-time.jpg"></a>
+        		<a href="/index.php/index/good"><img src="../../Public/dist/images/love-time.jpg"></a>
         	</div>
             <div class="love-flashsale-down">
                 <span>剩余时间</span>
@@ -58,10 +58,10 @@
             </div>
         	<div class="love-flashsale-style">
         	    <div class="flashsale-style1">
-        			<a href="javascript:;" class="flashsale-style"><img src="../../Public/dist/images/love-time1.jpg" ></a>
+        			<a href="/index.php/index/good" class="flashsale-style"><img src="../../Public/dist/images/love-time1.jpg" ></a>
         		</div>
         		<div class="flashsale-style2">
-        			<a href="javascript:;"><img src="../../Public/dist/images/love-time2.jpg" ></a>
+        			<a href="/index.php/index/good"><img src="../../Public/dist/images/love-time2.jpg" ></a>
         		</div>
         	</div>
         </div>
@@ -75,82 +75,82 @@
 
             <ul class="love-category-list clearfix">
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category1.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category1.jpg" alt=""></a>
                     <p class="love-category-name">上衣</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category2.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category2.jpg" alt=""></a>
                     <p class="love-category-name">裤子</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category3.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category3.jpg" alt=""></a>
                     <p class="love-category-name">裙子</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category4.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category4.jpg" alt=""></a>
                     <p class="love-category-name">内衣</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category5.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category5.jpg" alt=""></a>
                     <p class="love-category-name">鞋子</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category6.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category6.jpg" alt=""></a>
                     <p class="love-category-name">包包</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category7.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category7.jpg" alt=""></a>
                     <p class="love-category-name">男友</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
                     <p class="love-category-name">美妆</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category9.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category9.jpg" alt=""></a>
                     <p class="love-category-name">配饰</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category10.png" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category10.png" alt=""></a>
                     <p class="love-category-name">母婴</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category11.png" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category11.png" alt=""></a>
                     <p class="love-category-name">家居</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
                     <p class="love-category-name">个护</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category13.png" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category13.png" alt=""></a>
                     <p class="love-category-name">百货</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category14.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category14.jpg" alt=""></a>
                     <p class="love-category-name">零食</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
                     <p class="love-category-name">美妆</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                  <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
                     <p class="love-category-name">个护</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
@@ -163,12 +163,12 @@
         <!-- love-new -->
         <div class="love-new clearfix">
             <div class="love-new-cloth1">
-                <a href="javascrprit:;">
+                <a href="/index.php/index/good">
                     <img src="../../Public/dist/images/love-new1.jpg">
                 </a>
             </div>
             <div class="love-new-cloth2">
-                <a href="javascrprit:;">
+                <a href="/index.php/index/good">
                     <img src="../../Public/dist/images/love-new2.jpg">
                 </a>
             </div>
@@ -201,10 +201,10 @@
                       <ul>
                         <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs1.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs1.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -214,10 +214,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -227,10 +227,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -240,10 +240,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -253,10 +253,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                             <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -266,10 +266,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -278,10 +278,10 @@
                        </li> 
                         <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -291,10 +291,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs1.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs1.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -312,10 +312,10 @@
                     <ul>
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -325,10 +325,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -338,10 +338,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -351,10 +351,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -364,10 +364,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                             <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -377,10 +377,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -389,10 +389,10 @@
                        </li> 
                         <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -402,10 +402,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs1.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs1.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -423,10 +423,10 @@
                     <ul>
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -436,10 +436,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -449,10 +449,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -462,10 +462,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -475,10 +475,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                             <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -488,10 +488,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -500,10 +500,10 @@
                        </li> 
                         <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -513,10 +513,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs1.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs1.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -534,10 +534,10 @@
                     <ul>
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -547,10 +547,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -560,10 +560,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -573,10 +573,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -586,10 +586,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs3.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs3.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                             <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -599,10 +599,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs2.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs2.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -611,10 +611,10 @@
                        </li> 
                         <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs4.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs4.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>
@@ -624,10 +624,10 @@
 
                        <li>
                            <div class="imgs-box-img">
-                               <a><img src="../../Public/dist/images/love-imgs1.webp"></a>
+                               <a href="/index.php/index/good"><img src="../../Public/dist/images/love-imgs1.webp"></a>
                            </div>
                            <div class="imgs-box-title">
-                               实拍2色夹棉厚羊毛呢大翻领大衣
+                               <a href="/index.php/index/good">实拍2色夹棉厚羊毛呢大翻领大衣</a>
                            </div>
                            <div class="imgs-box-price">
                                <span class="box-price">168.00</span>

@@ -104,14 +104,14 @@
                 <div class="makets-content clearfix">
                     <ul>
                         <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature1.jpg"></div>
                                 <div class="item-title">品牌</div>
                                 <div class="item-desc">冬季大牌攻略</div>
                             </a>
                         </li>
                          <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature2.jpg"></div>
                                 <div class="item-title">红人Bazaar</div>
                                 <div class="item-desc">冬日红人热款</div>
@@ -119,7 +119,7 @@
                         </li>
 
                          <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature3.jpg"></div>
                                 <div class="item-title">心水好货</div>
                                 <div class="item-desc">2016开运好物</div>
@@ -127,28 +127,28 @@
                         </li>
 
                          <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature4.jpg"></div>
                                 <div class="item-title">设计师</div>
                                 <div class="item-desc">设计师新款来袭</div>
                             </a>
                         </li>
                          <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature5.jpg"></div>
                                 <div class="item-title">轻时髦</div>
                                 <div class="item-desc">时髦轻生活</div>
                             </a>
                         </li>
                          <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature6.jpg"></div>
                                 <div class="item-title">享瘦</div>
                                 <div class="item-desc">能让你变瘦</div>
                             </a>
                         </li>
                          <li class="module-item">
-                            <a href="javascript:;">
+                            <a href="/index.php/index/slider">
                                 <div class="item-logo"><img src="../../Public/dist/images/love-feature7.jpg"></div>
                                 <div class="item-title">淘淘馆</div>
                                 <div class="item-desc">全球超值好货</div>
@@ -172,20 +172,20 @@
                     <span class="love-time J_timeSeconds">00</span>
                 </div>
                 <div class="love-flash-item">
-                    <a href="#"><img src="../../Public/dist/images/love-flash-main.jpg" alt=""></a>
+                    <a href="/index.php/index/good"><img src="../../Public/dist/images/love-flash-main.jpg" alt=""></a>
                 </div>
             </div>
 
             <div class="love-flash-list">
                 <div class="love-list-top">
-                    <a href="#"><img src="../../Public/dist/images/love-flash-top.jpg" alt=""></a>
+                    <a href="/index.php/index/good"><img src="../../Public/dist/images/love-flash-top.jpg" alt=""></a>
                 </div>
                 <div class="love-list-bottom">
                     <div class="love-list-left">
-                        <a href="#"><img src="../../Public/dist/images/love-flash-left.jpg" alt=""></a>
+                        <a href="/index.php/index/good"><img src="../../Public/dist/images/love-flash-left.jpg" alt=""></a>
                     </div>
                     <div class="love-list-right">
-                        <a href="#"><img src="../../Public/dist/images/love-flash-right.jpg" alt=""></a>
+                        <a href="/index.php/index/good"><img src="../../Public/dist/images/love-flash-right.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -197,72 +197,72 @@
 
             <ul class="love-category-list clearfix">
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category1.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category1.jpg" alt=""></a>
                     <p class="love-category-name">上衣</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category2.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category2.jpg" alt=""></a>
                     <p class="love-category-name">裤子</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category3.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category3.jpg" alt=""></a>
                     <p class="love-category-name">裙子</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category4.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category4.jpg" alt=""></a>
                     <p class="love-category-name">内衣</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category5.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category5.jpg" alt=""></a>
                     <p class="love-category-name">鞋子</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category6.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category6.jpg" alt=""></a>
                     <p class="love-category-name">包包</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category7.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category7.jpg" alt=""></a>
                     <p class="love-category-name">男友</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category8.jpg" alt=""></a>
                     <p class="love-category-name">美妆</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category9.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category9.jpg" alt=""></a>
                     <p class="love-category-name">配饰</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category10.png" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category10.png" alt=""></a>
                     <p class="love-category-name">母婴</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category11.png" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category11.png" alt=""></a>
                     <p class="love-category-name">家居</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category12.jpg" alt=""></a>
                     <p class="love-category-name">个护</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category13.png" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category13.png" alt=""></a>
                     <p class="love-category-name">百货</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
                 <li class="love-category-item">
-                    <a href="#"><img src="../../Public/dist/images/love-category14.jpg" alt=""></a>
+                    <a href="/index.php/index/waist"><img src="../../Public/dist/images/love-category14.jpg" alt=""></a>
                     <p class="love-category-name">零食</p>
                     <p class="love-category-description">新年换新衣</p>
                 </li>
@@ -274,14 +274,14 @@
             <div class="love-item-main" style="margin-right: 2%;">
                 <span class="love-item-label">母婴</span>
 
-                <a class="love-item-img" href="#">
+                <a class="love-item-img" href="/index.php/index/good">
                     <div class="love-img-detail">
                         <img src="../../Public/dist/images/love-item1.png" width="100%" alt="">
                     </div>
                 </a>
 
                 <div class="love-item-content">
-                    <a href="#">十元封顶vol.29</a>
+                    <a href="/index.php/index/good">十元封顶vol.29</a>
                     <p>生活需要美好小物来搭配~</p>
                 </div>
             </div>
@@ -289,14 +289,14 @@
             <div class="love-item-main">
                 <span class="love-item-label">家居</span>
 
-                <a class="love-item-img" href="#">
+                <a class="love-item-img" href="/index.php/index/good">
                     <div class="love-img-detail">
                         <img src="../../Public/dist/images/love-item1.jpg" width="100%" alt="">
                     </div>
                 </a>
 
                 <div class="love-item-content">
-                    <a href="#">小小型男</a>
+                    <a href="/index.php/index/good">小小型男</a>
                     <p>小型男品味从小培养，绝对百搭必备款！</p>
                 </div>
             </div>
@@ -304,14 +304,14 @@
             <div class="love-item-main" style="margin-right: 2%;">
                 <span class="love-item-label">母婴</span>
 
-                <a class="love-item-img" href="#">
+                <a class="love-item-img" href="/index.php/index/good">
                     <div class="love-img-detail">
                         <img src="../../Public/dist/images/love-item1.png" width="100%" alt="">
                     </div>
                 </a>
 
                 <div class="love-item-content">
-                    <a href="#">十元封顶vol.29</a>
+                    <a href="/index.php/index/good">十元封顶vol.29</a>
                     <p>生活需要美好小物来搭配~</p>
                 </div>
             </div>
@@ -319,14 +319,14 @@
             <div class="love-item-main">
                 <span class="love-item-label">家居</span>
 
-                <a class="love-item-img" href="#">
+                <a class="love-item-img" href="/index.php/index/good">
                     <div class="love-img-detail">
                         <img src="../../Public/dist/images/love-item1.jpg" width="100%" alt="">
                     </div>
                 </a>
 
                 <div class="love-item-content">
-                    <a href="#">小小型男</a>
+                    <a href="/index.php/index/good">小小型男</a>
                     <p>小型男品味从小培养，绝对百搭必备款！</p>
                 </div>
             </div>
@@ -334,14 +334,14 @@
             <div class="love-item-main" style="margin-right: 2%;">
                 <span class="love-item-label">母婴</span>
 
-                <a class="love-item-img" href="#">
+                <a class="love-item-img" href="/index.php/index/good">
                     <div class="love-img-detail">
                         <img src="../../Public/dist/images/love-item1.png" width="100%" alt="">
                     </div>
                 </a>
 
                 <div class="love-item-content">
-                    <a href="#">十元封顶vol.29</a>
+                    <a href="/index.php/index/good">十元封顶vol.29</a>
                     <p>生活需要美好小物来搭配~</p>
                 </div>
             </div>
@@ -349,14 +349,14 @@
             <div class="love-item-main">
                 <span class="love-item-label">家居</span>
 
-                <a class="love-item-img" href="#">
+                <a class="love-item-img" href="/index.php/index/good">
                     <div class="love-img-detail">
                         <img src="../../Public/dist/images/love-item1.jpg" width="100%" alt="">
                     </div>
                 </a>
 
                 <div class="love-item-content">
-                    <a href="#">小小型男</a>
+                    <a href="/index.php/index/good">小小型男</a>
                     <p>小型男品味从小培养，绝对百搭必备款！</p>
                 </div>
             </div>

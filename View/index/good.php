@@ -14,6 +14,8 @@
 
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="../../Public/dist/css/good.css">
+    <!-- component -->
+    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/component.css">
 
     <!-- According to the screen automatically set the font size -->
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
@@ -547,7 +549,31 @@
                     oMask.style.zIndex="-1";
                     oMask.style.opacity="0";
                 }
-            
+
+          $('.love-header-icon').click(function(){
+            history.back();
+          });
+
+          $('.love-header-car, .foot-shopcar').click(function(){
+            util.alertHint('添加购物车成功');
+          })
+
+          $('.love-coupon-concessions ul li a').click(function(){
+            oLovecoupon.style.zIndex="-1";
+            oLovecoupon.style.opacity="0";
+            oMask.style.zIndex="-1";
+            oMask.style.opacity="0";
+            util.alertHint('优惠券领取成功');
+          })
+
+          $('.love-collect-favorites').click(function(){
+            util.alertHint('店铺收藏成功');
+          })
+          
+          $('.love-foot-like').click(function(){
+            util.alertHint('添加到喜欢列表');
+            $(this).children('.iconfont').removeClass('icon-xin').addClass('icon-xin1').css('color', 'red');
+          })            
         }
     </script>
     
