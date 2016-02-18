@@ -13,125 +13,14 @@
     <link rel="stylesheet" type="text/css" href="../../Public/dist/plugins/iconfont/iconfont.css">
 
     <!-- style -->
-    <!-- <link rel="stylesheet" type="text/css" href="../../Public/dist/css/index.min.css"> -->
-    <style>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box; }
+    <link rel="stylesheet" type="text/css" href="../../Public/dist/css/slider.min.css">
 
-        a {
-        text-decoration: none; }
-
-        li {
-        list-style: none; }
-
-        img {
-        vertical-align: middle;
-        border: 0; }
-
-        html {
-        font-size: 100px; }
-
-        body {
-        font-size: 16px;
-        font-family: "Helvetica Microsoft YaHei";
-        background: #F6F6F6; }
-
-        /*Remove the ios bring their own style*/
-        input[type="text"],
-        input[type="submit"],
-        input[type="botton"] {
-        -webkit-appearance: none;
-        outline: none; }
-
-        /*Remove android&ios a/button/input the border&background around the label is clicked to produce*/
-        a,
-        button,
-        input,
-        div {
-          -webkit-tap-highlight-color: rgba(255, 0, 0, 0); }
-
-        .clearfix:after {
-          display: block;
-          content: '';
-          height: 0;
-          width: 0;
-          overflow: hidden;
-          clear: both; }
-
-        .clearfix {
-          zoom: 1; }
-
-        /**
-         * variable
-         */
-        /*font color*/
-        /**
-         * page index 
-         * author: hj;
-         */
-        .love-container {
-            max-width: 750px;
-            min-width: 320px;
-            margin-left: auto;
-            margin-right: auto; 
-        }
-         /*mbanner-top*/
-        .mbanner-top{
-            width: 100%;
-            height: .15rem;
-            background: #EAEAEA;
-        }
-    </style>
     <!-- According to the screen automatically set the font size -->
     <script src="../../Public/dist/js/factory/accordingScreenAutoSetFontSize.js"></script>
 </head>
 <body>
     <div class="love-container">
         <!-- 头部 -->
-        <style>
-            .love-header {
-                position: fixed;
-                top: 0;
-                /*left: 0;*/
-                z-index: 1000;
-                display: -webkit-flex;
-                display: -webkit-box;
-                width: 100%;
-                max-width: 750px;
-                line-height: 1.3;
-                padding: .05rem .08rem;
-                background: #fff;
-                border-bottom: 1px solid #e8e8e8;
-                z-index: 200;
-
-                }
-            .love-header .love-menu-icon {
-                display: inline-block;
-                font-size: .14rem;
-                color: #727272; 
-                }
-            .love-header .love-shopcar {
-                display: inline-block;
-                font-size: .14rem;
-                color: #727272;
-                }
-            .love-header .love-header-search {
-                /*display: -webkit-flex;*/
-               /* display: -webkit-box;*/
-                height: .2rem;
-                margin: 0 .05rem;
-                padding: 0 .02rem;
-                color: #5e5e5e;
-                width:1.9rem;
-                overflow: hidden;
-                text-align: center;
-                line-height: .2rem;
-                font-size: .13rem;
-                font-weight: 800;
-                 }
-        </style>
         <div class="love-header clearfix">
             <span class="love-menu-icon iconfont icon-caidan" id="J_leftMenu"></span>
 
@@ -142,35 +31,6 @@
         </div>
 
         <!--  -->
-        <style>
-            .lover-header-swiper{
-                height: 1.2rem;
-                width: 100%;
-                overflow: hidden;
-                margin-top: .3rem;
-                position: relative;
-            }
-            .love-swiper{
-                height: 1.2rem;
-                width: 100%;
-            }
-            .love-swiper .item{
-                width: 100%;
-                height: 1.2rem;
-            }
-            .lover-header-swiper .love-icon{
-                width: 100%;
-                height: .25rem;
-                position: absolute;
-                top:.95rem;
-                left:0;
-            }
-            .lover-header-swiper .love-icon img{
-                width: 100%;
-                height: .25rem;
-
-            } 
-        </style>
         <div class="lover-header-swiper">
             <div class="love-swiper swiper" style="height: 1.2rem;">
                 <div class="item" >
@@ -247,7 +107,7 @@
                 position: absolute;
                 top:-.45rem;
                 left: .8rem;
-                width: 100%;
+                width: 7rem;
                 display: flex;
             }
 
@@ -386,7 +246,6 @@
         
 
         <!--  今日红人上新 -->
-    
         <style>
             .love-rednewper{
                
@@ -475,7 +334,6 @@
 
 
         </style>
-
         <div class="love-rednewper clearfix">
             <p class="love-newer">今日红人上新</p>
             <div class="love-red" id="J_love_red">
@@ -599,85 +457,7 @@
         <!--  -->
          <div class="mbanner-top"></div>
 
-         <!-- 风格红人 -->
-         <style>
-                .love-newer{
-                    width: 100%;
-                    background: #ffffff;
-                     padding-bottom: .1rem;
-                }
-                .love-newer .love-newer-box{
-                    width: 100%;
-                    /*perspective: 0px;*/
-                }
-                .love-newer .love-newer-title{
-                    font-size: .1rem;
-                    font-weight: bolder;
-                    padding: .2rem .1rem .2rem;
-                    color:#7D7D7D;
-                }
-                .love-newer .love-newer-img{
-                    width: .833rem;
-                    float: left;
-                    position: relative;
-                    transform: rotateY(0deg);
-                    -webkit-transform: rotateY(0deg);
-                    -moz-transform: rotateY(0deg);
-                    -o-transform: rotateY(0deg);
-                    transition: all .5s ease-out;
-                } 
-                .love-newer .love-newer-rotate{
-                    transform: rotateY(360deg);
-                    -webkit-transform: rotateY(360deg);
-                    -moz-transform: rotateY(360deg);
-                    -o-transform: rotateY(360deg);
-                }
-
-                .love-newer  .love-newer-box .love-newer-img img{
-                    width: 100%;
-                    height: 1.5rem;
-                }
-                .love-newer  .love-newer-box .love-newer-img .love-newer-padding{
-                    padding: .72rem .39rem;
-                    border: .008rem solid #ffffff;
-                    position: absolute;
-                    top:.02rem;
-                    left: .02rem;
-
-                }
-                .love-newer  .love-newer-box .love-newer-icon{
-                    width: .8rem;
-                    height: .7rem;
-                    position: absolute;
-                    top:.85rem;
-                    left: 0;
-                    padding-left: .05rem;
-                    text-align: center;
-                }
-                .love-newer  .love-newer-box .love-newer-icon .newer-icon1{
-                    color: #ffffff;
-                    font-size: .12rem;
-                    padding: .05rem 0;
-
-                }
-                .love-newer  .love-newer-box .love-newer-icon .newer-icon2{
-                    color: #ffffff;
-                    font-size: .08rem;
-                    padding: .05rem 0;
-                }
-                .love-newer  .love-newer-box .love-newer-icon span{
-                    display: block;
-                    width: .4rem;
-                    height: .15rem;
-                    color: #ffffff;
-                    font-size: .1rem;
-                    border: 0.01rem solid #ffffff;
-                    margin: 0 auto;
-                    line-height: .15rem;
-                    border-radius: .01rem;
-                }
-
-         </style>
+        <!-- 风格红人 -->
         <div class="love-newer clearfix">
                 <p class="love-newer-title">风格红人</p>
                 <div class="love-newer-box" id="J_newerBox">
@@ -779,83 +559,6 @@
 
         
         <!-- 图片列表题目 -->
-        <style>
-            .love-title{
-                background: #f1f1f1;
-                width: 100%;
-                position: relative;
-                /*z-index: 1;*/
-                overflow: hidden;
-               /* margin-top: .1rem;*/
-            }
-
-            .love-title .love-title-star {
-                height:.4rem;
-                width: 1rem;
-                line-height: .4rem;
-                margin: 0 auto;
-                z-index: 2;
-            }
-            .love-title .love-title-star .title-choose{
-                font-size: .11rem;
-                color: #5E5E5E;
-                position: relative;
-                text-align: center;
-                font-weight: 800;
-            }
-            .love-title .love-title-star .title-choose:before{
-                display: block;
-                content: '';
-                height: 1px;
-                width: 1rem;
-                background: #e5e5e5;
-                position: absolute;
-                top: .2rem;
-                left: -.9rem;
-            }
-            .love-title .love-title-star .title-choose:after{
-                display: block;
-                content: '';
-                height: 1px;
-                width: 1rem;
-                background:#e5e5e5;
-                position: absolute;
-                top: .2rem;
-                right: -.9rem;
-            }
-            .love-title .love-title-list{
-                
-                height: .6rem;
-                margin: 0 auto;
-                border-bottom: 1px solid #e5e5e5;
-                background:#ffffff;                
-            }
-            .love-title .love-title-list a{
-        
-                display: block;
-                float: left;
-                color: #333;
-                text-align: center;
-                width:.625rem;
-                height: .3rem;
-                border-bottom: 1px solid #e5e5e5;
-    
-            }
-            .love-title .love-title-list a div{
-                font-size: .08rem;
-                color: #333;
-                text-align: center;
-                width:.625rem;
-                height: .1rem;
-                margin-top: .1rem;
-                border-right: 1px solid #e5e5e5;
-    
-            }
-            .love-title .love-title-list .title-list3{
-                color: #FF5778;
-            }
-        
-        </style>
         <div class="love-title clearfix">
             <div class="love-title-star">
     
@@ -879,54 +582,8 @@
                 <a href="javascript:;"><div class="title-list">万能内搭</div></a>
             </div>
         </div>
+
         <!-- 瀑布流 -->
-        <style>
-            .love-imgs{
-                padding-top: .1rem;
-                background:#EAEAEA;
-                width: 100%;
-            }
-            .love-imgs .J-love-li{
-                display: none;
-            }
-            .love-imgs .love-imgs-box{
-                width: 100%;
-            }
-
-            .love-imgs .love-imgs-box .imgs-box-img a img{
-                height: 1.5rem;
-                width: 100%;
-
-            }
-            .love-imgs .love-imgs-box ul li{
-                display: block;
-                float: left;
-                padding-left: .1rem;
-               /* margin-bottom: .1rem;*/
-                width: 1.2rem;
-                height: 2rem;
-                /*padding-bottom: .1rem;*/
-            }
-            .love-imgs .love-imgs-box ul li .imgs-box-title{
-              /*  color:*/ 
-              font-size:.07rem;
-              padding: .05rem 0;
-              color: #757575;
-            }
-            .love-imgs .love-imgs-box ul li span{
-                font-size: .07rem;
-            }
-            .love-imgs .love-imgs-box ul li .imgs-box-price .box-price{
-                color: #FF5778;
-                float: left;
-            }
-            .love-imgs .love-imgs-box ul li .imgs-box-price .iconfont{
-                color: #757575;
-                float: right;
-            }
-
-
-        </style>
         <div class="love-imgs clearfix" id="J-love-imgs">
             <ul>
                 <li class="J-love-li" style="display:block">
